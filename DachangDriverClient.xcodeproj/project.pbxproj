@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF36BF942042AE22000CC50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BF932042AE22000CC50E /* AppDelegate.m */; };
+		CF36BF972042AE22000CC50E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BF962042AE22000CC50E /* ViewController.m */; };
+		CF36BF9A2042AE22000CC50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF36BF982042AE22000CC50E /* Main.storyboard */; };
+		CF36BF9C2042AE22000CC50E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF36BF9B2042AE22000CC50E /* Assets.xcassets */; };
+		CF36BF9F2042AE22000CC50E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF36BF9D2042AE22000CC50E /* LaunchScreen.storyboard */; };
+		CF36BFA22042AE22000CC50E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFA12042AE22000CC50E /* main.m */; };
+		CF36BFAC2042AE22000CC50E /* DachangDriverClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFAB2042AE22000CC50E /* DachangDriverClientTests.m */; };
+		CF36BFB72042AE22000CC50E /* DachangDriverClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFB62042AE22000CC50E /* DachangDriverClientUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF36BFA82042AE22000CC50E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF36BF872042AE22000CC50E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF36BF8E2042AE22000CC50E;
+			remoteInfo = DachangDriverClient;
+		};
+		CF36BFB32042AE22000CC50E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF36BF872042AE22000CC50E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF36BF8E2042AE22000CC50E;
+			remoteInfo = DachangDriverClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF36BF8F2042AE22000CC50E /* DachangDriverClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DachangDriverClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF36BF922042AE22000CC50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF36BF932042AE22000CC50E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF36BF952042AE22000CC50E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF36BF962042AE22000CC50E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF36BF992042AE22000CC50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF36BF9B2042AE22000CC50E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF36BF9E2042AE22000CC50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF36BFA02042AE22000CC50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF36BFA12042AE22000CC50E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF36BFA72042AE22000CC50E /* DachangDriverClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DachangDriverClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF36BFAB2042AE22000CC50E /* DachangDriverClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DachangDriverClientTests.m; sourceTree = "<group>"; };
+		CF36BFAD2042AE22000CC50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF36BFB22042AE22000CC50E /* DachangDriverClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DachangDriverClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF36BFB62042AE22000CC50E /* DachangDriverClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DachangDriverClientUITests.m; sourceTree = "<group>"; };
+		CF36BFB82042AE22000CC50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF36BF8C2042AE22000CC50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF36BFA42042AE22000CC50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF36BFAF2042AE22000CC50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF36BF862042AE22000CC50E = {
+			isa = PBXGroup;
+			children = (
+				CF36BF912042AE22000CC50E /* DachangDriverClient */,
+				CF36BFAA2042AE22000CC50E /* DachangDriverClientTests */,
+				CF36BFB52042AE22000CC50E /* DachangDriverClientUITests */,
+				CF36BF902042AE22000CC50E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF36BF902042AE22000CC50E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BF8F2042AE22000CC50E /* DachangDriverClient.app */,
+				CF36BFA72042AE22000CC50E /* DachangDriverClientTests.xctest */,
+				CF36BFB22042AE22000CC50E /* DachangDriverClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF36BF912042AE22000CC50E /* DachangDriverClient */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BF922042AE22000CC50E /* AppDelegate.h */,
+				CF36BF932042AE22000CC50E /* AppDelegate.m */,
+				CF36BF952042AE22000CC50E /* ViewController.h */,
+				CF36BF962042AE22000CC50E /* ViewController.m */,
+				CF36BF982042AE22000CC50E /* Main.storyboard */,
+				CF36BF9B2042AE22000CC50E /* Assets.xcassets */,
+				CF36BF9D2042AE22000CC50E /* LaunchScreen.storyboard */,
+				CF36BFA02042AE22000CC50E /* Info.plist */,
+				CF36BFA12042AE22000CC50E /* main.m */,
+			);
+			path = DachangDriverClient;
+			sourceTree = "<group>";
+		};
+		CF36BFAA2042AE22000CC50E /* DachangDriverClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFAB2042AE22000CC50E /* DachangDriverClientTests.m */,
+				CF36BFAD2042AE22000CC50E /* Info.plist */,
+			);
+			path = DachangDriverClientTests;
+			sourceTree = "<group>";
+		};
+		CF36BFB52042AE22000CC50E /* DachangDriverClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFB62042AE22000CC50E /* DachangDriverClientUITests.m */,
+				CF36BFB82042AE22000CC50E /* Info.plist */,
+			);
+			path = DachangDriverClientUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF36BF8E2042AE22000CC50E /* DachangDriverClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF36BFBB2042AE22000CC50E /* Build configuration list for PBXNativeTarget "DachangDriverClient" */;
+			buildPhases = (
+				CF36BF8B2042AE22000CC50E /* Sources */,
+				CF36BF8C2042AE22000CC50E /* Frameworks */,
+				CF36BF8D2042AE22000CC50E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DachangDriverClient;
+			productName = DachangDriverClient;
+			productReference = CF36BF8F2042AE22000CC50E /* DachangDriverClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF36BFA62042AE22000CC50E /* DachangDriverClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF36BFBE2042AE22000CC50E /* Build configuration list for PBXNativeTarget "DachangDriverClientTests" */;
+			buildPhases = (
+				CF36BFA32042AE22000CC50E /* Sources */,
+				CF36BFA42042AE22000CC50E /* Frameworks */,
+				CF36BFA52042AE22000CC50E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF36BFA92042AE22000CC50E /* PBXTargetDependency */,
+			);
+			name = DachangDriverClientTests;
+			productName = DachangDriverClientTests;
+			productReference = CF36BFA72042AE22000CC50E /* DachangDriverClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF36BFB12042AE22000CC50E /* DachangDriverClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF36BFC12042AE22000CC50E /* Build configuration list for PBXNativeTarget "DachangDriverClientUITests" */;
+			buildPhases = (
+				CF36BFAE2042AE22000CC50E /* Sources */,
+				CF36BFAF2042AE22000CC50E /* Frameworks */,
+				CF36BFB02042AE22000CC50E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF36BFB42042AE22000CC50E /* PBXTargetDependency */,
+			);
+			name = DachangDriverClientUITests;
+			productName = DachangDriverClientUITests;
+			productReference = CF36BFB22042AE22000CC50E /* DachangDriverClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF36BF872042AE22000CC50E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = dongsheng;
+				TargetAttributes = {
+					CF36BF8E2042AE22000CC50E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CF36BFA62042AE22000CC50E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF36BF8E2042AE22000CC50E;
+					};
+					CF36BFB12042AE22000CC50E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF36BF8E2042AE22000CC50E;
+					};
+				};
+			};
+			buildConfigurationList = CF36BF8A2042AE22000CC50E /* Build configuration list for PBXProject "DachangDriverClient" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF36BF862042AE22000CC50E;
+			productRefGroup = CF36BF902042AE22000CC50E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF36BF8E2042AE22000CC50E /* DachangDriverClient */,
+				CF36BFA62042AE22000CC50E /* DachangDriverClientTests */,
+				CF36BFB12042AE22000CC50E /* DachangDriverClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF36BF8D2042AE22000CC50E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF36BF9F2042AE22000CC50E /* LaunchScreen.storyboard in Resources */,
+				CF36BF9C2042AE22000CC50E /* Assets.xcassets in Resources */,
+				CF36BF9A2042AE22000CC50E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF36BFA52042AE22000CC50E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF36BFB02042AE22000CC50E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF36BF8B2042AE22000CC50E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF36BF972042AE22000CC50E /* ViewController.m in Sources */,
+				CF36BFA22042AE22000CC50E /* main.m in Sources */,
+				CF36BF942042AE22000CC50E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF36BFA32042AE22000CC50E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF36BFAC2042AE22000CC50E /* DachangDriverClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF36BFAE2042AE22000CC50E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF36BFB72042AE22000CC50E /* DachangDriverClientUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF36BFA92042AE22000CC50E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF36BF8E2042AE22000CC50E /* DachangDriverClient */;
+			targetProxy = CF36BFA82042AE22000CC50E /* PBXContainerItemProxy */;
+		};
+		CF36BFB42042AE22000CC50E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF36BF8E2042AE22000CC50E /* DachangDriverClient */;
+			targetProxy = CF36BFB32042AE22000CC50E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF36BF982042AE22000CC50E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF36BF992042AE22000CC50E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF36BF9D2042AE22000CC50E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF36BF9E2042AE22000CC50E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF36BFB92042AE22000CC50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF36BFBA2042AE22000CC50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF36BFBC2042AE22000CC50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B74XK883LC;
+				INFOPLIST_FILE = DachangDriverClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF36BFBD2042AE22000CC50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B74XK883LC;
+				INFOPLIST_FILE = DachangDriverClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF36BFBF2042AE22000CC50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B74XK883LC;
+				INFOPLIST_FILE = DachangDriverClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DachangDriverClient.app/DachangDriverClient";
+			};
+			name = Debug;
+		};
+		CF36BFC02042AE22000CC50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B74XK883LC;
+				INFOPLIST_FILE = DachangDriverClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DachangDriverClient.app/DachangDriverClient";
+			};
+			name = Release;
+		};
+		CF36BFC22042AE22000CC50E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B74XK883LC;
+				INFOPLIST_FILE = DachangDriverClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DachangDriverClient;
+			};
+			name = Debug;
+		};
+		CF36BFC32042AE22000CC50E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B74XK883LC;
+				INFOPLIST_FILE = DachangDriverClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DachangDriverClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF36BF8A2042AE22000CC50E /* Build configuration list for PBXProject "DachangDriverClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF36BFB92042AE22000CC50E /* Debug */,
+				CF36BFBA2042AE22000CC50E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF36BFBB2042AE22000CC50E /* Build configuration list for PBXNativeTarget "DachangDriverClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF36BFBC2042AE22000CC50E /* Debug */,
+				CF36BFBD2042AE22000CC50E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF36BFBE2042AE22000CC50E /* Build configuration list for PBXNativeTarget "DachangDriverClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF36BFBF2042AE22000CC50E /* Debug */,
+				CF36BFC02042AE22000CC50E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF36BFC12042AE22000CC50E /* Build configuration list for PBXNativeTarget "DachangDriverClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF36BFC22042AE22000CC50E /* Debug */,
+				CF36BFC32042AE22000CC50E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF36BF872042AE22000CC50E /* Project object */;
+}
