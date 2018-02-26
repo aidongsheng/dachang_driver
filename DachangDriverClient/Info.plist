@@ -41,5 +41,26 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>【51车司机端】需要您的同意，才能开启定位功能</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>【51车司机端】需要访问您的图片资源</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>【51车司机端】需要访问您的图片资源</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>【51车司机端】需要访问您的图片资源</string>
+	<key>CFBundleDisplayName</key>
+	<string>51车司机端</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>【51车司机端】需要访问您的图片资源</string>
 </dict>
 </plist>

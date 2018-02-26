@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90F15EE289DC12A6D8D13A4 /* libPods-DachangDriverClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C4A3EBC07F50CCC65BD061 /* libPods-DachangDriverClient.a */; };
 		CF36BF942042AE22000CC50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BF932042AE22000CC50E /* AppDelegate.m */; };
 		CF36BF972042AE22000CC50E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BF962042AE22000CC50E /* ViewController.m */; };
 		CF36BF9A2042AE22000CC50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF36BF982042AE22000CC50E /* Main.storyboard */; };
@@ -15,6 +16,76 @@
 		CF36BFA22042AE22000CC50E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFA12042AE22000CC50E /* main.m */; };
 		CF36BFAC2042AE22000CC50E /* DachangDriverClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFAB2042AE22000CC50E /* DachangDriverClientTests.m */; };
 		CF36BFB72042AE22000CC50E /* DachangDriverClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFB62042AE22000CC50E /* DachangDriverClientUITests.m */; };
+		CF36BFF62042B17C000CC50E /* CLInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFC62042B17B000CC50E /* CLInputAccessoryView.m */; };
+		CF36BFF72042B17C000CC50E /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFCA2042B17B000CC50E /* DBTool.m */; };
+		CF36BFFA2042B17C000CC50E /* CarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFD62042B17B000CC50E /* CarouselView.m */; };
+		CF36BFFB2042B17C000CC50E /* CLIndexPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFD72042B17B000CC50E /* CLIndexPageModel.m */; };
+		CF36BFFC2042B17C000CC50E /* CarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFD82042B17B000CC50E /* CarouselCollectionViewCell.m */; };
+		CF36BFFD2042B17C000CC50E /* CLMarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFDA2042B17B000CC50E /* CLMarkView.m */; };
+		CF36BFFE2042B17C000CC50E /* CLWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFDE2042B17B000CC50E /* CLWebViewViewController.m */; };
+		CF36BFFF2042B17C000CC50E /* NSData+ConvertToString.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFE12042B17B000CC50E /* NSData+ConvertToString.m */; };
+		CF36C0042042B17C000CC50E /* AudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFEF2042B17B000CC50E /* AudioTool.m */; };
+		CF36C0052042B17C000CC50E /* CLNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFF12042B17B000CC50E /* CLNetworkTool.m */; };
+		CF36C07F2042B22E000CC50E /* YTKRequest+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0092042B22E000CC50E /* YTKRequest+Category.m */; };
+		CF36C0802042B22E000CC50E /* QMUITextField+Warning.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C00D2042B22E000CC50E /* QMUITextField+Warning.m */; };
+		CF36C0812042B22E000CC50E /* QMUIButton+TitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C00F2042B22E000CC50E /* QMUIButton+TitleLabel.m */; };
+		CF36C0822042B22E000CC50E /* QMUIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0132042B22E000CC50E /* QMUIButton+CountDown.m */; };
+		CF36C0832042B22E000CC50E /* QMUIButton+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0142042B22E000CC50E /* QMUIButton+Event.m */; };
+		CF36C0842042B22E000CC50E /* UITableView+SearchBarCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0162042B22E000CC50E /* UITableView+SearchBarCategory.m */; };
+		CF36C0852042B22E000CC50E /* UITableViewCell+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C01A2042B22E000CC50E /* UITableViewCell+Category.m */; };
+		CF36C0862042B22E000CC50E /* UIViewController+CLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C01C2042B22E000CC50E /* UIViewController+CLCategory.m */; };
+		CF36C0872042B22E000CC50E /* UITableViewHeaderFooterView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0212042B22E000CC50E /* UITableViewHeaderFooterView+Category.m */; };
+		CF36C0882042B22E000CC50E /* UIView+ConfigureActions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0232042B22E000CC50E /* UIView+ConfigureActions.m */; };
+		CF36C0892042B22E000CC50E /* UIView+POPAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0242042B22E000CC50E /* UIView+POPAnimations.m */; };
+		CF36C08A2042B22E000CC50E /* UIView+LayerBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0252042B22E000CC50E /* UIView+LayerBorder.m */; };
+		CF36C08B2042B22E000CC50E /* UIView+ConvertRect.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0292042B22E000CC50E /* UIView+ConvertRect.m */; };
+		CF36C08C2042B22E000CC50E /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C02D2042B22E000CC50E /* UIView+SetRect.m */; };
+		CF36C08D2042B22E000CC50E /* UIView+ScreensShot.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C02F2042B22E000CC50E /* UIView+ScreensShot.m */; };
+		CF36C08E2042B22E000CC50E /* UIView+CLAddBaseLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0302042B22E000CC50E /* UIView+CLAddBaseLine.m */; };
+		CF36C08F2042B22E000CC50E /* UIView+ReturnController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0332042B22E000CC50E /* UIView+ReturnController.m */; };
+		CF36C0902042B22E000CC50E /* UIView+ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0352042B22E000CC50E /* UIView+ToastView.m */; };
+		CF36C0912042B22E000CC50E /* UIView+UserInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0362042B22E000CC50E /* UIView+UserInteraction.m */; };
+		CF36C0922042B22E000CC50E /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0372042B22E000CC50E /* UIView+Shake.m */; };
+		CF36C0932042B22E000CC50E /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C03B2042B22E000CC50E /* UIView+AnimationProperty.m */; };
+		CF36C0942042B22E000CC50E /* UIView+GlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C03D2042B22E000CC50E /* UIView+GlowView.m */; };
+		CF36C0952042B22E000CC50E /* UIView+AnimationPracticalMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C03F2042B22E000CC50E /* UIView+AnimationPracticalMethod.m */; };
+		CF36C0962042B22E000CC50E /* UIView+CLEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0402042B22E000CC50E /* UIView+CLEvent.m */; };
+		CF36C0972042B22E000CC50E /* UIView+DebugFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0412042B22E000CC50E /* UIView+DebugFrame.m */; };
+		CF36C0982042B22E000CC50E /* UIView+ConvenientMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0432042B22E000CC50E /* UIView+ConvenientMethod.m */; };
+		CF36C0992042B22E000CC50E /* UIView+SetupSubViews.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0442042B22E000CC50E /* UIView+SetupSubViews.m */; };
+		CF36C09A2042B22E000CC50E /* UICollectionViewCell+RegisterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0472042B22E000CC50E /* UICollectionViewCell+RegisterCell.m */; };
+		CF36C09B2042B22E000CC50E /* UIFont+Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C04A2042B22E000CC50E /* UIFont+Fonts.m */; };
+		CF36C09C2042B22E000CC50E /* CAShapeLayer+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C04C2042B22E000CC50E /* CAShapeLayer+Category.m */; };
+		CF36C09E2042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0522042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.m */; };
+		CF36C09F2042B22E000CC50E /* BaseCustomButton+Events.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0542042B22E000CC50E /* BaseCustomButton+Events.m */; };
+		CF36C0A02042B22E000CC50E /* BaseCustomButton+POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0562042B22E000CC50E /* BaseCustomButton+POPAnimation.m */; };
+		CF36C0A12042B22E000CC50E /* BaseCustomButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0592042B22E000CC50E /* BaseCustomButton+Style.m */; };
+		CF36C0A22042B22E000CC50E /* NSUserDefaults+CLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C05B2042B22E000CC50E /* NSUserDefaults+CLCategory.m */; };
+		CF36C0A32042B22E000CC50E /* UITextField+CLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C05E2042B22E000CC50E /* UITextField+CLCategory.m */; };
+		CF36C0A42042B22E000CC50E /* UIImageView+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0652042B22E000CC50E /* UIImageView+TintColor.m */; };
+		CF36C0A62042B22E000CC50E /* NSString+CLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C06A2042B22E000CC50E /* NSString+CLCategory.m */; };
+		CF36C0A72042B22E000CC50E /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C06D2042B22E000CC50E /* UILabel+Category.m */; };
+		CF36C0A82042B22E000CC50E /* UILabel+UnderlinePattern.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C06F2042B22E000CC50E /* UILabel+UnderlinePattern.m */; };
+		CF36C0A92042B22E000CC50E /* UIImage+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0722042B22E000CC50E /* UIImage+Compression.m */; };
+		CF36C0AA2042B22E000CC50E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0762042B22E000CC50E /* UIImage+ImageEffects.m */; };
+		CF36C0AB2042B22E000CC50E /* UIImage+ImageColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0772042B22E000CC50E /* UIImage+ImageColor.m */; };
+		CF36C0AC2042B22E000CC50E /* NSDictionary+CLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0792042B22E000CC50E /* NSDictionary+CLCategory.m */; };
+		CF36C0AD2042B22E000CC50E /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C07D2042B22E000CC50E /* UITextView+Placeholder.m */; };
+		CF36C0C52042B249000CC50E /* CustomNavBarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0B02042B249000CC50E /* CustomNavBarHeaderView.m */; };
+		CF36C0C62042B249000CC50E /* BaseCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0B32042B249000CC50E /* BaseCustomTabBar.m */; };
+		CF36C0C72042B249000CC50E /* BaseCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0B52042B249000CC50E /* BaseCustomTabBarController.m */; };
+		CF36C0C82042B249000CC50E /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0BA2042B249000CC50E /* BaseCollectionViewCell.m */; };
+		CF36C0C92042B249000CC50E /* customCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0BB2042B249000CC50E /* customCell.m */; };
+		CF36C0CA2042B249000CC50E /* BaseCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0BD2042B249000CC50E /* BaseCustomButton.m */; };
+		CF36C0CB2042B249000CC50E /* BaseCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0C12042B249000CC50E /* BaseCustomViewController.m */; };
+		CF36C0CC2042B249000CC50E /* BaseCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0C42042B249000CC50E /* BaseCustomNavigationController.m */; };
+		CF36C0DC2042B3F0000CC50E /* DCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0DB2042B3F0000CC50E /* DCMineViewController.m */; };
+		CF36C0DF2042B593000CC50E /* DCWorkbenchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0DE2042B593000CC50E /* DCWorkbenchViewController.m */; };
+		CF36C0E22042B5B8000CC50E /* DCTotalOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0E12042B5B8000CC50E /* DCTotalOrderViewController.m */; };
+		CF36C0F02042BDAB000CC50E /* CLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0E92042BDAB000CC50E /* CLLoginViewController.m */; };
+		CF36C0F12042BDAB000CC50E /* CLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0EA2042BDAB000CC50E /* CLLoginView.m */; };
+		CF36C0F22042BDAB000CC50E /* CLUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0EC2042BDAB000CC50E /* CLUserInfoModel.m */; };
+		CF36C0F32042BDAB000CC50E /* CLLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0EE2042BDAB000CC50E /* CLLoginRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +106,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AD76CA457AF777376F5A120 /* Pods-DachangDriverClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DachangDriverClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DachangDriverClient/Pods-DachangDriverClient.debug.xcconfig"; sourceTree = "<group>"; };
+		63C4A3EBC07F50CCC65BD061 /* libPods-DachangDriverClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DachangDriverClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27A0273E7B07B936931B65F /* Pods-DachangDriverClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DachangDriverClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-DachangDriverClient/Pods-DachangDriverClient.release.xcconfig"; sourceTree = "<group>"; };
 		CF36BF8F2042AE22000CC50E /* DachangDriverClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DachangDriverClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF36BF922042AE22000CC50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF36BF932042AE22000CC50E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +125,154 @@
 		CF36BFB22042AE22000CC50E /* DachangDriverClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DachangDriverClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF36BFB62042AE22000CC50E /* DachangDriverClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DachangDriverClientUITests.m; sourceTree = "<group>"; };
 		CF36BFB82042AE22000CC50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF36BFC62042B17B000CC50E /* CLInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLInputAccessoryView.m; sourceTree = "<group>"; };
+		CF36BFC72042B17B000CC50E /* CLInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLInputAccessoryView.h; sourceTree = "<group>"; };
+		CF36BFC92042B17B000CC50E /* DBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTool.h; sourceTree = "<group>"; };
+		CF36BFCA2042B17B000CC50E /* DBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
+		CF36BFD32042B17B000CC50E /* CarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselView.h; sourceTree = "<group>"; };
+		CF36BFD42042B17B000CC50E /* CLIndexPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIndexPageModel.h; sourceTree = "<group>"; };
+		CF36BFD52042B17B000CC50E /* CarouselCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselCollectionViewCell.h; sourceTree = "<group>"; };
+		CF36BFD62042B17B000CC50E /* CarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselView.m; sourceTree = "<group>"; };
+		CF36BFD72042B17B000CC50E /* CLIndexPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIndexPageModel.m; sourceTree = "<group>"; };
+		CF36BFD82042B17B000CC50E /* CarouselCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselCollectionViewCell.m; sourceTree = "<group>"; };
+		CF36BFDA2042B17B000CC50E /* CLMarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMarkView.m; sourceTree = "<group>"; };
+		CF36BFDB2042B17B000CC50E /* CLMarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMarkView.h; sourceTree = "<group>"; };
+		CF36BFDD2042B17B000CC50E /* CLWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWebViewViewController.h; sourceTree = "<group>"; };
+		CF36BFDE2042B17B000CC50E /* CLWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWebViewViewController.m; sourceTree = "<group>"; };
+		CF36BFE02042B17B000CC50E /* NSData+ConvertToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ConvertToString.h"; sourceTree = "<group>"; };
+		CF36BFE12042B17B000CC50E /* NSData+ConvertToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ConvertToString.m"; sourceTree = "<group>"; };
+		CF36BFEE2042B17B000CC50E /* AudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTool.h; sourceTree = "<group>"; };
+		CF36BFEF2042B17B000CC50E /* AudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTool.m; sourceTree = "<group>"; };
+		CF36BFF12042B17B000CC50E /* CLNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNetworkTool.m; sourceTree = "<group>"; };
+		CF36BFF22042B17B000CC50E /* CLNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNetworkTool.h; sourceTree = "<group>"; };
+		CF36C0082042B22E000CC50E /* YTKRequest+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YTKRequest+Category.h"; sourceTree = "<group>"; };
+		CF36C0092042B22E000CC50E /* YTKRequest+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YTKRequest+Category.m"; sourceTree = "<group>"; };
+		CF36C00C2042B22E000CC50E /* QMUITextField+Warning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QMUITextField+Warning.h"; sourceTree = "<group>"; };
+		CF36C00D2042B22E000CC50E /* QMUITextField+Warning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUITextField+Warning.m"; sourceTree = "<group>"; };
+		CF36C00F2042B22E000CC50E /* QMUIButton+TitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUIButton+TitleLabel.m"; sourceTree = "<group>"; };
+		CF36C0102042B22E000CC50E /* QMUIButton+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QMUIButton+Event.h"; sourceTree = "<group>"; };
+		CF36C0112042B22E000CC50E /* QMUIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QMUIButton+CountDown.h"; sourceTree = "<group>"; };
+		CF36C0122042B22E000CC50E /* QMUIButton+TitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QMUIButton+TitleLabel.h"; sourceTree = "<group>"; };
+		CF36C0132042B22E000CC50E /* QMUIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUIButton+CountDown.m"; sourceTree = "<group>"; };
+		CF36C0142042B22E000CC50E /* QMUIButton+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUIButton+Event.m"; sourceTree = "<group>"; };
+		CF36C0162042B22E000CC50E /* UITableView+SearchBarCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SearchBarCategory.m"; sourceTree = "<group>"; };
+		CF36C0172042B22E000CC50E /* UITableView+SearchBarCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SearchBarCategory.h"; sourceTree = "<group>"; };
+		CF36C0192042B22E000CC50E /* UITableViewCell+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Category.h"; sourceTree = "<group>"; };
+		CF36C01A2042B22E000CC50E /* UITableViewCell+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Category.m"; sourceTree = "<group>"; };
+		CF36C01C2042B22E000CC50E /* UIViewController+CLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CLCategory.m"; sourceTree = "<group>"; };
+		CF36C01D2042B22E000CC50E /* UIViewController+CLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CLCategory.h"; sourceTree = "<group>"; };
+		CF36C0202042B22E000CC50E /* UITableViewHeaderFooterView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+Category.h"; sourceTree = "<group>"; };
+		CF36C0212042B22E000CC50E /* UITableViewHeaderFooterView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewHeaderFooterView+Category.m"; sourceTree = "<group>"; };
+		CF36C0232042B22E000CC50E /* UIView+ConfigureActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConfigureActions.m"; sourceTree = "<group>"; };
+		CF36C0242042B22E000CC50E /* UIView+POPAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+POPAnimations.m"; sourceTree = "<group>"; };
+		CF36C0252042B22E000CC50E /* UIView+LayerBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerBorder.m"; sourceTree = "<group>"; };
+		CF36C0262042B22E000CC50E /* UIView+UserInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UserInteraction.h"; sourceTree = "<group>"; };
+		CF36C0272042B22E000CC50E /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		CF36C0282042B22E000CC50E /* UIView+ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ToastView.h"; sourceTree = "<group>"; };
+		CF36C0292042B22E000CC50E /* UIView+ConvertRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConvertRect.m"; sourceTree = "<group>"; };
+		CF36C02A2042B22E000CC50E /* UIView+AnimationPracticalMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationPracticalMethod.h"; sourceTree = "<group>"; };
+		CF36C02B2042B22E000CC50E /* UIView+GlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GlowView.h"; sourceTree = "<group>"; };
+		CF36C02C2042B22E000CC50E /* UIView+AnimationProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationProperty.h"; sourceTree = "<group>"; };
+		CF36C02D2042B22E000CC50E /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		CF36C02E2042B22E000CC50E /* UIView+CLEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLEvent.h"; sourceTree = "<group>"; };
+		CF36C02F2042B22E000CC50E /* UIView+ScreensShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScreensShot.m"; sourceTree = "<group>"; };
+		CF36C0302042B22E000CC50E /* UIView+CLAddBaseLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLAddBaseLine.m"; sourceTree = "<group>"; };
+		CF36C0312042B22E000CC50E /* UIView+SetupSubViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetupSubViews.h"; sourceTree = "<group>"; };
+		CF36C0322042B22E000CC50E /* UIView+ConvenientMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ConvenientMethod.h"; sourceTree = "<group>"; };
+		CF36C0332042B22E000CC50E /* UIView+ReturnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ReturnController.m"; sourceTree = "<group>"; };
+		CF36C0342042B22E000CC50E /* UIView+DebugFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DebugFrame.h"; sourceTree = "<group>"; };
+		CF36C0352042B22E000CC50E /* UIView+ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ToastView.m"; sourceTree = "<group>"; };
+		CF36C0362042B22E000CC50E /* UIView+UserInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UserInteraction.m"; sourceTree = "<group>"; };
+		CF36C0372042B22E000CC50E /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
+		CF36C0382042B22E000CC50E /* UIView+LayerBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerBorder.h"; sourceTree = "<group>"; };
+		CF36C0392042B22E000CC50E /* UIView+POPAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+POPAnimations.h"; sourceTree = "<group>"; };
+		CF36C03A2042B22E000CC50E /* UIView+ConfigureActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ConfigureActions.h"; sourceTree = "<group>"; };
+		CF36C03B2042B22E000CC50E /* UIView+AnimationProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationProperty.m"; sourceTree = "<group>"; };
+		CF36C03C2042B22E000CC50E /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		CF36C03D2042B22E000CC50E /* UIView+GlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GlowView.m"; sourceTree = "<group>"; };
+		CF36C03E2042B22E000CC50E /* UIView+ConvertRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ConvertRect.h"; sourceTree = "<group>"; };
+		CF36C03F2042B22E000CC50E /* UIView+AnimationPracticalMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationPracticalMethod.m"; sourceTree = "<group>"; };
+		CF36C0402042B22E000CC50E /* UIView+CLEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLEvent.m"; sourceTree = "<group>"; };
+		CF36C0412042B22E000CC50E /* UIView+DebugFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DebugFrame.m"; sourceTree = "<group>"; };
+		CF36C0422042B22E000CC50E /* UIView+ReturnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ReturnController.h"; sourceTree = "<group>"; };
+		CF36C0432042B22E000CC50E /* UIView+ConvenientMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConvenientMethod.m"; sourceTree = "<group>"; };
+		CF36C0442042B22E000CC50E /* UIView+SetupSubViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetupSubViews.m"; sourceTree = "<group>"; };
+		CF36C0452042B22E000CC50E /* UIView+CLAddBaseLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLAddBaseLine.h"; sourceTree = "<group>"; };
+		CF36C0462042B22E000CC50E /* UIView+ScreensShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScreensShot.h"; sourceTree = "<group>"; };
+		CF36C0472042B22E000CC50E /* UICollectionViewCell+RegisterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+RegisterCell.m"; sourceTree = "<group>"; };
+		CF36C0492042B22E000CC50E /* UIFont+Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fonts.h"; sourceTree = "<group>"; };
+		CF36C04A2042B22E000CC50E /* UIFont+Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fonts.m"; sourceTree = "<group>"; };
+		CF36C04C2042B22E000CC50E /* CAShapeLayer+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+Category.m"; sourceTree = "<group>"; };
+		CF36C04D2042B22E000CC50E /* CAShapeLayer+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+Category.h"; sourceTree = "<group>"; };
+		CF36C0522042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseCustomButton+LayoutTitleLabelImageView.m"; sourceTree = "<group>"; };
+		CF36C0532042B22E000CC50E /* BaseCustomButton+POPAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseCustomButton+POPAnimation.h"; sourceTree = "<group>"; };
+		CF36C0542042B22E000CC50E /* BaseCustomButton+Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseCustomButton+Events.m"; sourceTree = "<group>"; };
+		CF36C0552042B22E000CC50E /* BaseCustomButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseCustomButton+Style.h"; sourceTree = "<group>"; };
+		CF36C0562042B22E000CC50E /* BaseCustomButton+POPAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseCustomButton+POPAnimation.m"; sourceTree = "<group>"; };
+		CF36C0572042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseCustomButton+LayoutTitleLabelImageView.h"; sourceTree = "<group>"; };
+		CF36C0582042B22E000CC50E /* BaseCustomButton+Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseCustomButton+Events.h"; sourceTree = "<group>"; };
+		CF36C0592042B22E000CC50E /* BaseCustomButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseCustomButton+Style.m"; sourceTree = "<group>"; };
+		CF36C05B2042B22E000CC50E /* NSUserDefaults+CLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+CLCategory.m"; sourceTree = "<group>"; };
+		CF36C05C2042B22E000CC50E /* NSUserDefaults+CLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+CLCategory.h"; sourceTree = "<group>"; };
+		CF36C05E2042B22E000CC50E /* UITextField+CLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CLCategory.m"; sourceTree = "<group>"; };
+		CF36C05F2042B22E000CC50E /* UITextField+CLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CLCategory.h"; sourceTree = "<group>"; };
+		CF36C0642042B22E000CC50E /* UIImageView+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TintColor.h"; sourceTree = "<group>"; };
+		CF36C0652042B22E000CC50E /* UIImageView+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TintColor.m"; sourceTree = "<group>"; };
+		CF36C06A2042B22E000CC50E /* NSString+CLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CLCategory.m"; sourceTree = "<group>"; };
+		CF36C06B2042B22E000CC50E /* NSString+CLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CLCategory.h"; sourceTree = "<group>"; };
+		CF36C06D2042B22E000CC50E /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
+		CF36C06E2042B22E000CC50E /* UILabel+UnderlinePattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+UnderlinePattern.h"; sourceTree = "<group>"; };
+		CF36C06F2042B22E000CC50E /* UILabel+UnderlinePattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+UnderlinePattern.m"; sourceTree = "<group>"; };
+		CF36C0702042B22E000CC50E /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
+		CF36C0722042B22E000CC50E /* UIImage+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compression.m"; sourceTree = "<group>"; };
+		CF36C0732042B22E000CC50E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		CF36C0742042B22E000CC50E /* UIImage+ImageColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageColor.h"; sourceTree = "<group>"; };
+		CF36C0752042B22E000CC50E /* UIImage+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compression.h"; sourceTree = "<group>"; };
+		CF36C0762042B22E000CC50E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		CF36C0772042B22E000CC50E /* UIImage+ImageColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageColor.m"; sourceTree = "<group>"; };
+		CF36C0792042B22E000CC50E /* NSDictionary+CLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CLCategory.m"; sourceTree = "<group>"; };
+		CF36C07A2042B22E000CC50E /* NSDictionary+CLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CLCategory.h"; sourceTree = "<group>"; };
+		CF36C07B2042B22E000CC50E /* UICollectionViewCell+RegisterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+RegisterCell.h"; sourceTree = "<group>"; };
+		CF36C07D2042B22E000CC50E /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		CF36C07E2042B22E000CC50E /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		CF36C0B02042B249000CC50E /* CustomNavBarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavBarHeaderView.m; sourceTree = "<group>"; };
+		CF36C0B12042B249000CC50E /* CustomNavBarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavBarHeaderView.h; sourceTree = "<group>"; };
+		CF36C0B32042B249000CC50E /* BaseCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCustomTabBar.m; sourceTree = "<group>"; };
+		CF36C0B42042B249000CC50E /* BaseCustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCustomTabBarController.h; sourceTree = "<group>"; };
+		CF36C0B52042B249000CC50E /* BaseCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCustomTabBarController.m; sourceTree = "<group>"; };
+		CF36C0B62042B249000CC50E /* BaseCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCustomTabBar.h; sourceTree = "<group>"; };
+		CF36C0B82042B249000CC50E /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
+		CF36C0B92042B249000CC50E /* customCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCell.h; sourceTree = "<group>"; };
+		CF36C0BA2042B249000CC50E /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
+		CF36C0BB2042B249000CC50E /* customCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCell.m; sourceTree = "<group>"; };
+		CF36C0BD2042B249000CC50E /* BaseCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCustomButton.m; sourceTree = "<group>"; };
+		CF36C0BE2042B249000CC50E /* BaseCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCustomButton.h; sourceTree = "<group>"; };
+		CF36C0C02042B249000CC50E /* BaseCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCustomViewController.h; sourceTree = "<group>"; };
+		CF36C0C12042B249000CC50E /* BaseCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCustomViewController.m; sourceTree = "<group>"; };
+		CF36C0C32042B249000CC50E /* BaseCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCustomNavigationController.h; sourceTree = "<group>"; };
+		CF36C0C42042B249000CC50E /* BaseCustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCustomNavigationController.m; sourceTree = "<group>"; };
+		CF36C0CE2042B264000CC50E /* MethodMacroHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodMacroHeader.h; sourceTree = "<group>"; };
+		CF36C0CF2042B264000CC50E /* APIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHeader.h; sourceTree = "<group>"; };
+		CF36C0D02042B264000CC50E /* DEBUGHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEBUGHeader.h; sourceTree = "<group>"; };
+		CF36C0D22042B264000CC50E /* RequestHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHeader.h; sourceTree = "<group>"; };
+		CF36C0D32042B264000CC50E /* ColorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorHeader.h; sourceTree = "<group>"; };
+		CF36C0D42042B264000CC50E /* ExtensionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionHeader.h; sourceTree = "<group>"; };
+		CF36C0D52042B264000CC50E /* ParameterHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterHeader.h; sourceTree = "<group>"; };
+		CF36C0DA2042B3F0000CC50E /* DCMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCMineViewController.h; sourceTree = "<group>"; };
+		CF36C0DB2042B3F0000CC50E /* DCMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCMineViewController.m; sourceTree = "<group>"; };
+		CF36C0DD2042B593000CC50E /* DCWorkbenchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCWorkbenchViewController.h; sourceTree = "<group>"; };
+		CF36C0DE2042B593000CC50E /* DCWorkbenchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCWorkbenchViewController.m; sourceTree = "<group>"; };
+		CF36C0E02042B5B8000CC50E /* DCTotalOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTotalOrderViewController.h; sourceTree = "<group>"; };
+		CF36C0E12042B5B8000CC50E /* DCTotalOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTotalOrderViewController.m; sourceTree = "<group>"; };
+		CF36C0E82042BDAB000CC50E /* CLUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUserInfoModel.h; sourceTree = "<group>"; };
+		CF36C0E92042BDAB000CC50E /* CLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoginViewController.m; sourceTree = "<group>"; };
+		CF36C0EA2042BDAB000CC50E /* CLLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoginView.m; sourceTree = "<group>"; };
+		CF36C0EB2042BDAB000CC50E /* CLLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoginRequest.h; sourceTree = "<group>"; };
+		CF36C0EC2042BDAB000CC50E /* CLUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLUserInfoModel.m; sourceTree = "<group>"; };
+		CF36C0ED2042BDAB000CC50E /* CLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoginViewController.h; sourceTree = "<group>"; };
+		CF36C0EE2042BDAB000CC50E /* CLLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoginRequest.m; sourceTree = "<group>"; };
+		CF36C0EF2042BDAB000CC50E /* CLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoginView.h; sourceTree = "<group>"; };
+		CF36C0F42042BE1E000CC50E /* driver_project_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = driver_project_header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +280,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90F15EE289DC12A6D8D13A4 /* libPods-DachangDriverClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +301,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68C2C6F506C2628274FE962C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AD76CA457AF777376F5A120 /* Pods-DachangDriverClient.debug.xcconfig */,
+				A27A0273E7B07B936931B65F /* Pods-DachangDriverClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97BFA57DB4B827E1EA0A4223 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63C4A3EBC07F50CCC65BD061 /* libPods-DachangDriverClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF36BF862042AE22000CC50E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +325,8 @@
 				CF36BFAA2042AE22000CC50E /* DachangDriverClientTests */,
 				CF36BFB52042AE22000CC50E /* DachangDriverClientUITests */,
 				CF36BF902042AE22000CC50E /* Products */,
+				68C2C6F506C2628274FE962C /* Pods */,
+				97BFA57DB4B827E1EA0A4223 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +343,11 @@
 		CF36BF912042AE22000CC50E /* DachangDriverClient */ = {
 			isa = PBXGroup;
 			children = (
+				CF36C0D62042B34D000CC50E /* Modules */,
+				CF36C0CD2042B264000CC50E /* Headers */,
+				CF36C0AE2042B249000CC50E /* AbstractBaseClass */,
+				CF36C0062042B22E000CC50E /* Extension+Category */,
+				CF36BFC42042B17B000CC50E /* GeneralTools */,
 				CF36BF922042AE22000CC50E /* AppDelegate.h */,
 				CF36BF932042AE22000CC50E /* AppDelegate.m */,
 				CF36BF952042AE22000CC50E /* ViewController.h */,
@@ -132,6 +379,557 @@
 			path = DachangDriverClientUITests;
 			sourceTree = "<group>";
 		};
+		CF36BFC42042B17B000CC50E /* GeneralTools */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFC52042B17B000CC50E /* InputAccessoryView */,
+				CF36BFC82042B17B000CC50E /* DBTool */,
+				CF36BFD22042B17B000CC50E /* CarouselView */,
+				CF36BFD92042B17B000CC50E /* MarkView */,
+				CF36BFDC2042B17B000CC50E /* WebView */,
+				CF36BFDF2042B17B000CC50E /* NSData+Category */,
+				CF36BFED2042B17B000CC50E /* Audio-Tool */,
+				CF36BFF02042B17B000CC50E /* Network-Tool */,
+			);
+			path = GeneralTools;
+			sourceTree = "<group>";
+		};
+		CF36BFC52042B17B000CC50E /* InputAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFC62042B17B000CC50E /* CLInputAccessoryView.m */,
+				CF36BFC72042B17B000CC50E /* CLInputAccessoryView.h */,
+			);
+			path = InputAccessoryView;
+			sourceTree = "<group>";
+		};
+		CF36BFC82042B17B000CC50E /* DBTool */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFC92042B17B000CC50E /* DBTool.h */,
+				CF36BFCA2042B17B000CC50E /* DBTool.m */,
+			);
+			path = DBTool;
+			sourceTree = "<group>";
+		};
+		CF36BFD22042B17B000CC50E /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFD32042B17B000CC50E /* CarouselView.h */,
+				CF36BFD42042B17B000CC50E /* CLIndexPageModel.h */,
+				CF36BFD52042B17B000CC50E /* CarouselCollectionViewCell.h */,
+				CF36BFD62042B17B000CC50E /* CarouselView.m */,
+				CF36BFD72042B17B000CC50E /* CLIndexPageModel.m */,
+				CF36BFD82042B17B000CC50E /* CarouselCollectionViewCell.m */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		CF36BFD92042B17B000CC50E /* MarkView */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFDA2042B17B000CC50E /* CLMarkView.m */,
+				CF36BFDB2042B17B000CC50E /* CLMarkView.h */,
+			);
+			path = MarkView;
+			sourceTree = "<group>";
+		};
+		CF36BFDC2042B17B000CC50E /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFDD2042B17B000CC50E /* CLWebViewViewController.h */,
+				CF36BFDE2042B17B000CC50E /* CLWebViewViewController.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		CF36BFDF2042B17B000CC50E /* NSData+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFE02042B17B000CC50E /* NSData+ConvertToString.h */,
+				CF36BFE12042B17B000CC50E /* NSData+ConvertToString.m */,
+			);
+			path = "NSData+Category";
+			sourceTree = "<group>";
+		};
+		CF36BFED2042B17B000CC50E /* Audio-Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFEE2042B17B000CC50E /* AudioTool.h */,
+				CF36BFEF2042B17B000CC50E /* AudioTool.m */,
+			);
+			path = "Audio-Tool";
+			sourceTree = "<group>";
+		};
+		CF36BFF02042B17B000CC50E /* Network-Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CF36BFF12042B17B000CC50E /* CLNetworkTool.m */,
+				CF36BFF22042B17B000CC50E /* CLNetworkTool.h */,
+			);
+			path = "Network-Tool";
+			sourceTree = "<group>";
+		};
+		CF36C0062042B22E000CC50E /* Extension+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0072042B22E000CC50E /* YTKRequest+Category */,
+				CF36C00A2042B22E000CC50E /* QMUI+Category */,
+				CF36C0152042B22E000CC50E /* UITableView+Category */,
+				CF36C0182042B22E000CC50E /* UITableViewCell+Category */,
+				CF36C01B2042B22E000CC50E /* UIViewController+Category */,
+				CF36C01E2042B22E000CC50E /* UIButton+Category */,
+				CF36C01F2042B22E000CC50E /* UITableViewHeaderFooterView+Category */,
+				CF36C0222042B22E000CC50E /* UIView+Category */,
+				CF36C0472042B22E000CC50E /* UICollectionViewCell+RegisterCell.m */,
+				CF36C0482042B22E000CC50E /* UIFont+Font */,
+				CF36C04B2042B22E000CC50E /* CAShaplayer+Category */,
+				CF36C04E2042B22E000CC50E /* UIImageView+RemoveImage */,
+				CF36C0512042B22E000CC50E /* BaseCustomButton+Category */,
+				CF36C05A2042B22E000CC50E /* NSUserDefault+Category */,
+				CF36C05D2042B22E000CC50E /* UITextField+Category */,
+				CF36C0602042B22E000CC50E /* AppDelegate+Category */,
+				CF36C0632042B22E000CC50E /* UIImageView+TintColor */,
+				CF36C0692042B22E000CC50E /* NSString+Category */,
+				CF36C06C2042B22E000CC50E /* UILabel+Category */,
+				CF36C0712042B22E000CC50E /* UIImage+Category */,
+				CF36C0782042B22E000CC50E /* NSDictionary+Category */,
+				CF36C07B2042B22E000CC50E /* UICollectionViewCell+RegisterCell.h */,
+				CF36C07C2042B22E000CC50E /* UITextView+Category */,
+			);
+			path = "Extension+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0072042B22E000CC50E /* YTKRequest+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0082042B22E000CC50E /* YTKRequest+Category.h */,
+				CF36C0092042B22E000CC50E /* YTKRequest+Category.m */,
+			);
+			path = "YTKRequest+Category";
+			sourceTree = "<group>";
+		};
+		CF36C00A2042B22E000CC50E /* QMUI+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C00B2042B22E000CC50E /* QMUITextField */,
+				CF36C00E2042B22E000CC50E /* QMUIButton */,
+			);
+			path = "QMUI+Category";
+			sourceTree = "<group>";
+		};
+		CF36C00B2042B22E000CC50E /* QMUITextField */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C00C2042B22E000CC50E /* QMUITextField+Warning.h */,
+				CF36C00D2042B22E000CC50E /* QMUITextField+Warning.m */,
+			);
+			path = QMUITextField;
+			sourceTree = "<group>";
+		};
+		CF36C00E2042B22E000CC50E /* QMUIButton */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C00F2042B22E000CC50E /* QMUIButton+TitleLabel.m */,
+				CF36C0102042B22E000CC50E /* QMUIButton+Event.h */,
+				CF36C0112042B22E000CC50E /* QMUIButton+CountDown.h */,
+				CF36C0122042B22E000CC50E /* QMUIButton+TitleLabel.h */,
+				CF36C0132042B22E000CC50E /* QMUIButton+CountDown.m */,
+				CF36C0142042B22E000CC50E /* QMUIButton+Event.m */,
+			);
+			path = QMUIButton;
+			sourceTree = "<group>";
+		};
+		CF36C0152042B22E000CC50E /* UITableView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0162042B22E000CC50E /* UITableView+SearchBarCategory.m */,
+				CF36C0172042B22E000CC50E /* UITableView+SearchBarCategory.h */,
+			);
+			path = "UITableView+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0182042B22E000CC50E /* UITableViewCell+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0192042B22E000CC50E /* UITableViewCell+Category.h */,
+				CF36C01A2042B22E000CC50E /* UITableViewCell+Category.m */,
+			);
+			path = "UITableViewCell+Category";
+			sourceTree = "<group>";
+		};
+		CF36C01B2042B22E000CC50E /* UIViewController+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C01C2042B22E000CC50E /* UIViewController+CLCategory.m */,
+				CF36C01D2042B22E000CC50E /* UIViewController+CLCategory.h */,
+			);
+			path = "UIViewController+Category";
+			sourceTree = "<group>";
+		};
+		CF36C01E2042B22E000CC50E /* UIButton+Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIButton+Category";
+			sourceTree = "<group>";
+		};
+		CF36C01F2042B22E000CC50E /* UITableViewHeaderFooterView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0202042B22E000CC50E /* UITableViewHeaderFooterView+Category.h */,
+				CF36C0212042B22E000CC50E /* UITableViewHeaderFooterView+Category.m */,
+			);
+			path = "UITableViewHeaderFooterView+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0222042B22E000CC50E /* UIView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0232042B22E000CC50E /* UIView+ConfigureActions.m */,
+				CF36C0242042B22E000CC50E /* UIView+POPAnimations.m */,
+				CF36C0252042B22E000CC50E /* UIView+LayerBorder.m */,
+				CF36C0262042B22E000CC50E /* UIView+UserInteraction.h */,
+				CF36C0272042B22E000CC50E /* UIView+Shake.h */,
+				CF36C0282042B22E000CC50E /* UIView+ToastView.h */,
+				CF36C0292042B22E000CC50E /* UIView+ConvertRect.m */,
+				CF36C02A2042B22E000CC50E /* UIView+AnimationPracticalMethod.h */,
+				CF36C02B2042B22E000CC50E /* UIView+GlowView.h */,
+				CF36C02C2042B22E000CC50E /* UIView+AnimationProperty.h */,
+				CF36C02D2042B22E000CC50E /* UIView+SetRect.m */,
+				CF36C02E2042B22E000CC50E /* UIView+CLEvent.h */,
+				CF36C02F2042B22E000CC50E /* UIView+ScreensShot.m */,
+				CF36C0302042B22E000CC50E /* UIView+CLAddBaseLine.m */,
+				CF36C0312042B22E000CC50E /* UIView+SetupSubViews.h */,
+				CF36C0322042B22E000CC50E /* UIView+ConvenientMethod.h */,
+				CF36C0332042B22E000CC50E /* UIView+ReturnController.m */,
+				CF36C0342042B22E000CC50E /* UIView+DebugFrame.h */,
+				CF36C0352042B22E000CC50E /* UIView+ToastView.m */,
+				CF36C0362042B22E000CC50E /* UIView+UserInteraction.m */,
+				CF36C0372042B22E000CC50E /* UIView+Shake.m */,
+				CF36C0382042B22E000CC50E /* UIView+LayerBorder.h */,
+				CF36C0392042B22E000CC50E /* UIView+POPAnimations.h */,
+				CF36C03A2042B22E000CC50E /* UIView+ConfigureActions.h */,
+				CF36C03B2042B22E000CC50E /* UIView+AnimationProperty.m */,
+				CF36C03C2042B22E000CC50E /* UIView+SetRect.h */,
+				CF36C03D2042B22E000CC50E /* UIView+GlowView.m */,
+				CF36C03E2042B22E000CC50E /* UIView+ConvertRect.h */,
+				CF36C03F2042B22E000CC50E /* UIView+AnimationPracticalMethod.m */,
+				CF36C0402042B22E000CC50E /* UIView+CLEvent.m */,
+				CF36C0412042B22E000CC50E /* UIView+DebugFrame.m */,
+				CF36C0422042B22E000CC50E /* UIView+ReturnController.h */,
+				CF36C0432042B22E000CC50E /* UIView+ConvenientMethod.m */,
+				CF36C0442042B22E000CC50E /* UIView+SetupSubViews.m */,
+				CF36C0452042B22E000CC50E /* UIView+CLAddBaseLine.h */,
+				CF36C0462042B22E000CC50E /* UIView+ScreensShot.h */,
+			);
+			path = "UIView+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0482042B22E000CC50E /* UIFont+Font */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0492042B22E000CC50E /* UIFont+Fonts.h */,
+				CF36C04A2042B22E000CC50E /* UIFont+Fonts.m */,
+			);
+			path = "UIFont+Font";
+			sourceTree = "<group>";
+		};
+		CF36C04B2042B22E000CC50E /* CAShaplayer+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C04C2042B22E000CC50E /* CAShapeLayer+Category.m */,
+				CF36C04D2042B22E000CC50E /* CAShapeLayer+Category.h */,
+			);
+			path = "CAShaplayer+Category";
+			sourceTree = "<group>";
+		};
+		CF36C04E2042B22E000CC50E /* UIImageView+RemoveImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIImageView+RemoveImage";
+			sourceTree = "<group>";
+		};
+		CF36C0512042B22E000CC50E /* BaseCustomButton+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0522042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.m */,
+				CF36C0532042B22E000CC50E /* BaseCustomButton+POPAnimation.h */,
+				CF36C0542042B22E000CC50E /* BaseCustomButton+Events.m */,
+				CF36C0552042B22E000CC50E /* BaseCustomButton+Style.h */,
+				CF36C0562042B22E000CC50E /* BaseCustomButton+POPAnimation.m */,
+				CF36C0572042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.h */,
+				CF36C0582042B22E000CC50E /* BaseCustomButton+Events.h */,
+				CF36C0592042B22E000CC50E /* BaseCustomButton+Style.m */,
+			);
+			path = "BaseCustomButton+Category";
+			sourceTree = "<group>";
+		};
+		CF36C05A2042B22E000CC50E /* NSUserDefault+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C05B2042B22E000CC50E /* NSUserDefaults+CLCategory.m */,
+				CF36C05C2042B22E000CC50E /* NSUserDefaults+CLCategory.h */,
+			);
+			path = "NSUserDefault+Category";
+			sourceTree = "<group>";
+		};
+		CF36C05D2042B22E000CC50E /* UITextField+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C05E2042B22E000CC50E /* UITextField+CLCategory.m */,
+				CF36C05F2042B22E000CC50E /* UITextField+CLCategory.h */,
+			);
+			path = "UITextField+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0602042B22E000CC50E /* AppDelegate+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0612042B22E000CC50E /* AppDelegate+Alipay */,
+				CF36C0622042B22E000CC50E /* JpushDelegate */,
+			);
+			path = "AppDelegate+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0612042B22E000CC50E /* AppDelegate+Alipay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "AppDelegate+Alipay";
+			sourceTree = "<group>";
+		};
+		CF36C0622042B22E000CC50E /* JpushDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JpushDelegate;
+			sourceTree = "<group>";
+		};
+		CF36C0632042B22E000CC50E /* UIImageView+TintColor */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0642042B22E000CC50E /* UIImageView+TintColor.h */,
+				CF36C0652042B22E000CC50E /* UIImageView+TintColor.m */,
+			);
+			path = "UIImageView+TintColor";
+			sourceTree = "<group>";
+		};
+		CF36C0692042B22E000CC50E /* NSString+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C06A2042B22E000CC50E /* NSString+CLCategory.m */,
+				CF36C06B2042B22E000CC50E /* NSString+CLCategory.h */,
+			);
+			path = "NSString+Category";
+			sourceTree = "<group>";
+		};
+		CF36C06C2042B22E000CC50E /* UILabel+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C06D2042B22E000CC50E /* UILabel+Category.m */,
+				CF36C06E2042B22E000CC50E /* UILabel+UnderlinePattern.h */,
+				CF36C06F2042B22E000CC50E /* UILabel+UnderlinePattern.m */,
+				CF36C0702042B22E000CC50E /* UILabel+Category.h */,
+			);
+			path = "UILabel+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0712042B22E000CC50E /* UIImage+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0722042B22E000CC50E /* UIImage+Compression.m */,
+				CF36C0732042B22E000CC50E /* UIImage+ImageEffects.h */,
+				CF36C0742042B22E000CC50E /* UIImage+ImageColor.h */,
+				CF36C0752042B22E000CC50E /* UIImage+Compression.h */,
+				CF36C0762042B22E000CC50E /* UIImage+ImageEffects.m */,
+				CF36C0772042B22E000CC50E /* UIImage+ImageColor.m */,
+			);
+			path = "UIImage+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0782042B22E000CC50E /* NSDictionary+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0792042B22E000CC50E /* NSDictionary+CLCategory.m */,
+				CF36C07A2042B22E000CC50E /* NSDictionary+CLCategory.h */,
+			);
+			path = "NSDictionary+Category";
+			sourceTree = "<group>";
+		};
+		CF36C07C2042B22E000CC50E /* UITextView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C07D2042B22E000CC50E /* UITextView+Placeholder.m */,
+				CF36C07E2042B22E000CC50E /* UITextView+Placeholder.h */,
+			);
+			path = "UITextView+Category";
+			sourceTree = "<group>";
+		};
+		CF36C0AE2042B249000CC50E /* AbstractBaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0AF2042B249000CC50E /* BaseTableViews */,
+				CF36C0B22042B249000CC50E /* BaseCustomTabbarController */,
+				CF36C0B72042B249000CC50E /* BaseCell */,
+				CF36C0BC2042B249000CC50E /* BaseCustomButton */,
+				CF36C0BF2042B249000CC50E /* BaseCustomViewController */,
+				CF36C0C22042B249000CC50E /* BaseCustomNavigationController */,
+			);
+			path = AbstractBaseClass;
+			sourceTree = "<group>";
+		};
+		CF36C0AF2042B249000CC50E /* BaseTableViews */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0B02042B249000CC50E /* CustomNavBarHeaderView.m */,
+				CF36C0B12042B249000CC50E /* CustomNavBarHeaderView.h */,
+			);
+			path = BaseTableViews;
+			sourceTree = "<group>";
+		};
+		CF36C0B22042B249000CC50E /* BaseCustomTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0B32042B249000CC50E /* BaseCustomTabBar.m */,
+				CF36C0B42042B249000CC50E /* BaseCustomTabBarController.h */,
+				CF36C0B52042B249000CC50E /* BaseCustomTabBarController.m */,
+				CF36C0B62042B249000CC50E /* BaseCustomTabBar.h */,
+			);
+			path = BaseCustomTabbarController;
+			sourceTree = "<group>";
+		};
+		CF36C0B72042B249000CC50E /* BaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0B82042B249000CC50E /* BaseCollectionViewCell.h */,
+				CF36C0B92042B249000CC50E /* customCell.h */,
+				CF36C0BA2042B249000CC50E /* BaseCollectionViewCell.m */,
+				CF36C0BB2042B249000CC50E /* customCell.m */,
+			);
+			path = BaseCell;
+			sourceTree = "<group>";
+		};
+		CF36C0BC2042B249000CC50E /* BaseCustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0BD2042B249000CC50E /* BaseCustomButton.m */,
+				CF36C0BE2042B249000CC50E /* BaseCustomButton.h */,
+			);
+			path = BaseCustomButton;
+			sourceTree = "<group>";
+		};
+		CF36C0BF2042B249000CC50E /* BaseCustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0C02042B249000CC50E /* BaseCustomViewController.h */,
+				CF36C0C12042B249000CC50E /* BaseCustomViewController.m */,
+			);
+			path = BaseCustomViewController;
+			sourceTree = "<group>";
+		};
+		CF36C0C22042B249000CC50E /* BaseCustomNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0C32042B249000CC50E /* BaseCustomNavigationController.h */,
+				CF36C0C42042B249000CC50E /* BaseCustomNavigationController.m */,
+			);
+			path = BaseCustomNavigationController;
+			sourceTree = "<group>";
+		};
+		CF36C0CD2042B264000CC50E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0CE2042B264000CC50E /* MethodMacroHeader.h */,
+				CF36C0CF2042B264000CC50E /* APIHeader.h */,
+				CF36C0D02042B264000CC50E /* DEBUGHeader.h */,
+				CF36C0D22042B264000CC50E /* RequestHeader.h */,
+				CF36C0D32042B264000CC50E /* ColorHeader.h */,
+				CF36C0D42042B264000CC50E /* ExtensionHeader.h */,
+				CF36C0D52042B264000CC50E /* ParameterHeader.h */,
+				CF36C0F42042BE1E000CC50E /* driver_project_header.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		CF36C0D62042B34D000CC50E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0E72042BDAB000CC50E /* Login */,
+				CF36C0D92042B383000CC50E /* Mine */,
+				CF36C0D82042B37B000CC50E /* Workbench */,
+				CF36C0D72042B35F000CC50E /* Order */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CF36C0D72042B35F000CC50E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0E52042B65B000CC50E /* TotalOrderController */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		CF36C0D82042B37B000CC50E /* Workbench */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0E42042B651000CC50E /* WorkbenchController */,
+			);
+			path = Workbench;
+			sourceTree = "<group>";
+		};
+		CF36C0D92042B383000CC50E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0E32042B644000CC50E /* MineController */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		CF36C0E32042B644000CC50E /* MineController */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0DA2042B3F0000CC50E /* DCMineViewController.h */,
+				CF36C0DB2042B3F0000CC50E /* DCMineViewController.m */,
+			);
+			path = MineController;
+			sourceTree = "<group>";
+		};
+		CF36C0E42042B651000CC50E /* WorkbenchController */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0DD2042B593000CC50E /* DCWorkbenchViewController.h */,
+				CF36C0DE2042B593000CC50E /* DCWorkbenchViewController.m */,
+			);
+			path = WorkbenchController;
+			sourceTree = "<group>";
+		};
+		CF36C0E52042B65B000CC50E /* TotalOrderController */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0E02042B5B8000CC50E /* DCTotalOrderViewController.h */,
+				CF36C0E12042B5B8000CC50E /* DCTotalOrderViewController.m */,
+			);
+			path = TotalOrderController;
+			sourceTree = "<group>";
+		};
+		CF36C0E72042BDAB000CC50E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF36C0E82042BDAB000CC50E /* CLUserInfoModel.h */,
+				CF36C0E92042BDAB000CC50E /* CLLoginViewController.m */,
+				CF36C0EA2042BDAB000CC50E /* CLLoginView.m */,
+				CF36C0EB2042BDAB000CC50E /* CLLoginRequest.h */,
+				CF36C0EC2042BDAB000CC50E /* CLUserInfoModel.m */,
+				CF36C0ED2042BDAB000CC50E /* CLLoginViewController.h */,
+				CF36C0EE2042BDAB000CC50E /* CLLoginRequest.m */,
+				CF36C0EF2042BDAB000CC50E /* CLLoginView.h */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +937,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF36BFBB2042AE22000CC50E /* Build configuration list for PBXNativeTarget "DachangDriverClient" */;
 			buildPhases = (
+				ACAD01129F91CE6813FE63DD /* [CP] Check Pods Manifest.lock */,
 				CF36BF8B2042AE22000CC50E /* Sources */,
 				CF36BF8C2042AE22000CC50E /* Frameworks */,
 				CF36BF8D2042AE22000CC50E /* Resources */,
+				A9D0CB1516CD2F965C37A27B /* [CP] Embed Pods Frameworks */,
+				F1BD12C528463B68120AD894 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +995,7 @@
 		CF36BF872042AE22000CC50E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DC;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = dongsheng;
 				TargetAttributes = {
@@ -260,14 +1062,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A9D0CB1516CD2F965C37A27B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DachangDriverClient/Pods-DachangDriverClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACAD01129F91CE6813FE63DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DachangDriverClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BD12C528463B68120AD894 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DachangDriverClient/Pods-DachangDriverClient-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/QMUIKit/QMUIKit/QMUIResources/QMUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DachangDriverClient/Pods-DachangDriverClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF36BF8B2042AE22000CC50E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF36C0972042B22E000CC50E /* UIView+DebugFrame.m in Sources */,
+				CF36C0042042B17C000CC50E /* AudioTool.m in Sources */,
+				CF36BFFC2042B17C000CC50E /* CarouselCollectionViewCell.m in Sources */,
+				CF36C0F12042BDAB000CC50E /* CLLoginView.m in Sources */,
+				CF36C08B2042B22E000CC50E /* UIView+ConvertRect.m in Sources */,
+				CF36C0872042B22E000CC50E /* UITableViewHeaderFooterView+Category.m in Sources */,
 				CF36BF972042AE22000CC50E /* ViewController.m in Sources */,
+				CF36C0892042B22E000CC50E /* UIView+POPAnimations.m in Sources */,
+				CF36C0A32042B22E000CC50E /* UITextField+CLCategory.m in Sources */,
+				CF36C09F2042B22E000CC50E /* BaseCustomButton+Events.m in Sources */,
+				CF36C0F22042BDAB000CC50E /* CLUserInfoModel.m in Sources */,
+				CF36C0A92042B22E000CC50E /* UIImage+Compression.m in Sources */,
+				CF36C0A62042B22E000CC50E /* NSString+CLCategory.m in Sources */,
+				CF36C0822042B22E000CC50E /* QMUIButton+CountDown.m in Sources */,
+				CF36C0852042B22E000CC50E /* UITableViewCell+Category.m in Sources */,
+				CF36C0C92042B249000CC50E /* customCell.m in Sources */,
+				CF36BFFF2042B17C000CC50E /* NSData+ConvertToString.m in Sources */,
+				CF36C08F2042B22E000CC50E /* UIView+ReturnController.m in Sources */,
+				CF36C0862042B22E000CC50E /* UIViewController+CLCategory.m in Sources */,
+				CF36C08E2042B22E000CC50E /* UIView+CLAddBaseLine.m in Sources */,
+				CF36C0F02042BDAB000CC50E /* CLLoginViewController.m in Sources */,
+				CF36BFFD2042B17C000CC50E /* CLMarkView.m in Sources */,
+				CF36C0CA2042B249000CC50E /* BaseCustomButton.m in Sources */,
+				CF36C0CB2042B249000CC50E /* BaseCustomViewController.m in Sources */,
+				CF36C0832042B22E000CC50E /* QMUIButton+Event.m in Sources */,
+				CF36C0CC2042B249000CC50E /* BaseCustomNavigationController.m in Sources */,
+				CF36C0C82042B249000CC50E /* BaseCollectionViewCell.m in Sources */,
+				CF36C0AA2042B22E000CC50E /* UIImage+ImageEffects.m in Sources */,
+				CF36C0A22042B22E000CC50E /* NSUserDefaults+CLCategory.m in Sources */,
+				CF36C0882042B22E000CC50E /* UIView+ConfigureActions.m in Sources */,
+				CF36C0DC2042B3F0000CC50E /* DCMineViewController.m in Sources */,
+				CF36BFFA2042B17C000CC50E /* CarouselView.m in Sources */,
+				CF36C0902042B22E000CC50E /* UIView+ToastView.m in Sources */,
+				CF36C0992042B22E000CC50E /* UIView+SetupSubViews.m in Sources */,
+				CF36C0A72042B22E000CC50E /* UILabel+Category.m in Sources */,
+				CF36C0A12042B22E000CC50E /* BaseCustomButton+Style.m in Sources */,
+				CF36C08C2042B22E000CC50E /* UIView+SetRect.m in Sources */,
+				CF36C08D2042B22E000CC50E /* UIView+ScreensShot.m in Sources */,
+				CF36BFF72042B17C000CC50E /* DBTool.m in Sources */,
+				CF36C0952042B22E000CC50E /* UIView+AnimationPracticalMethod.m in Sources */,
+				CF36C0AD2042B22E000CC50E /* UITextView+Placeholder.m in Sources */,
+				CF36C0812042B22E000CC50E /* QMUIButton+TitleLabel.m in Sources */,
+				CF36C0F32042BDAB000CC50E /* CLLoginRequest.m in Sources */,
+				CF36C0E22042B5B8000CC50E /* DCTotalOrderViewController.m in Sources */,
+				CF36C0982042B22E000CC50E /* UIView+ConvenientMethod.m in Sources */,
+				CF36BFFE2042B17C000CC50E /* CLWebViewViewController.m in Sources */,
+				CF36C0DF2042B593000CC50E /* DCWorkbenchViewController.m in Sources */,
 				CF36BFA22042AE22000CC50E /* main.m in Sources */,
+				CF36C0802042B22E000CC50E /* QMUITextField+Warning.m in Sources */,
 				CF36BF942042AE22000CC50E /* AppDelegate.m in Sources */,
+				CF36C09B2042B22E000CC50E /* UIFont+Fonts.m in Sources */,
+				CF36C0942042B22E000CC50E /* UIView+GlowView.m in Sources */,
+				CF36C0052042B17C000CC50E /* CLNetworkTool.m in Sources */,
+				CF36C09E2042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.m in Sources */,
+				CF36C0842042B22E000CC50E /* UITableView+SearchBarCategory.m in Sources */,
+				CF36C0AC2042B22E000CC50E /* NSDictionary+CLCategory.m in Sources */,
+				CF36BFF62042B17C000CC50E /* CLInputAccessoryView.m in Sources */,
+				CF36C08A2042B22E000CC50E /* UIView+LayerBorder.m in Sources */,
+				CF36C0A02042B22E000CC50E /* BaseCustomButton+POPAnimation.m in Sources */,
+				CF36C0C52042B249000CC50E /* CustomNavBarHeaderView.m in Sources */,
+				CF36C07F2042B22E000CC50E /* YTKRequest+Category.m in Sources */,
+				CF36C0922042B22E000CC50E /* UIView+Shake.m in Sources */,
+				CF36C0962042B22E000CC50E /* UIView+CLEvent.m in Sources */,
+				CF36C0A82042B22E000CC50E /* UILabel+UnderlinePattern.m in Sources */,
+				CF36C0C62042B249000CC50E /* BaseCustomTabBar.m in Sources */,
+				CF36C0912042B22E000CC50E /* UIView+UserInteraction.m in Sources */,
+				CF36C0932042B22E000CC50E /* UIView+AnimationProperty.m in Sources */,
+				CF36BFFB2042B17C000CC50E /* CLIndexPageModel.m in Sources */,
+				CF36C09C2042B22E000CC50E /* CAShapeLayer+Category.m in Sources */,
+				CF36C0AB2042B22E000CC50E /* UIImage+ImageColor.m in Sources */,
+				CF36C0A42042B22E000CC50E /* UIImageView+TintColor.m in Sources */,
+				CF36C0C72042B249000CC50E /* BaseCustomTabBarController.m in Sources */,
+				CF36C09A2042B22E000CC50E /* UICollectionViewCell+RegisterCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +1357,13 @@
 		};
 		CF36BFBC2042AE22000CC50E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD76CA457AF777376F5A120 /* Pods-DachangDriverClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B74XK883LC;
+				DEVELOPMENT_TEAM = U4SWSTTNMU;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DachangDriverClient/Headers/driver_project_header.h";
 				INFOPLIST_FILE = DachangDriverClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClient;
@@ -442,10 +1374,13 @@
 		};
 		CF36BFBD2042AE22000CC50E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A27A0273E7B07B936931B65F /* Pods-DachangDriverClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B74XK883LC;
+				DEVELOPMENT_TEAM = U4SWSTTNMU;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DachangDriverClient/Headers/driver_project_header.h";
 				INFOPLIST_FILE = DachangDriverClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClient;
