@@ -10,7 +10,7 @@
 #define ParameterHeader_h
 
 #define LabelFontSizeUltraLarge        24
-#define LabelFontSizeLarge             18
+#define LabelFontSizeLarge             16
 #define LabelFontSizeMedium            14
 #define LabelFontSizeSmall             12
 #define LabelFontSizeUltraSmall        8

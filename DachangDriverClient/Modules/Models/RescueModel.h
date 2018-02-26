@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 @class rescueOrderItemInfo;
-@interface RescueOrderModel : NSObject
+@interface RescueOrderModel : NSObject<YYModel>
 @property (nonatomic,assign) NSInteger total;
-@property (nonatomic,strong) NSMutableArray * rescues;
+@property (nonatomic,strong) NSArray * rescues;
 @end
 
 @interface rescueOrderItemInfo : NSObject
@@ -84,7 +84,7 @@
 @property (nonatomic,assign) NSInteger is_urgent;
 @property (nonatomic,assign) NSInteger rescue_mileage;
 @property (nonatomic,assign) NSInteger assess_scores;
-@property (nonatomic,copy)  NSString * reason;
+//@property (nonatomic,copy)  NSString * reason;
 @end
 
 /**

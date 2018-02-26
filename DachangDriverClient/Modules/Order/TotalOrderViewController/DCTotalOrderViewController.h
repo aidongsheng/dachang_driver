@@ -7,7 +7,11 @@
 //
 
 #import "BaseCustomViewController.h"
+@class DCOrderTableViewCell;
+
+@interface DCOrderTableViewCell : customCell
+- (void)initCellWithItemInfo:(rescueOrderItemInfo *)itemInfo;
+@end
 
 @interface DCTotalOrderViewController : BaseCustomViewController
-
 @end

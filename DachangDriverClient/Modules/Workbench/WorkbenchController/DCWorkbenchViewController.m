@@ -29,8 +29,6 @@
     _mapView.rotateEnabled = NO;
     _mapView.overlookEnabled = NO;
     _mapView.logoPosition = BMKLogoPositionLeftTop;
-    
-    
     _service = [[BMKLocationService alloc]init];
     _service.distanceFilter = 10;
     _service.delegate = self;

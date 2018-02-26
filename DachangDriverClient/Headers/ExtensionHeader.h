@@ -103,6 +103,8 @@
 
 // 数据库相关
 #import "DBTool.h"
+//  UITaleviewCell子类
+#import "customCell.h"
 
 //  YYKit
 #import <YYKit.h>

@@ -92,8 +92,8 @@
 		CF70B61D2043B53900EEFAFA /* BMKMapView+CLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B61B2043B53800EEFAFA /* BMKMapView+CLCategory.m */; };
 		CF70B61F2043D74700EEFAFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF70B61E2043D74700EEFAFA /* MapKit.framework */; };
 		CF70B6232043D89500EEFAFA /* AppDelegate+CLBMKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6212043D89400EEFAFA /* AppDelegate+CLBMKCategory.m */; };
-		CF70B6262043E3C600EEFAFA /* DCOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6242043E3C500EEFAFA /* DCOrderTableViewCell.m */; };
 		CF70B62D2043E68900EEFAFA /* RescueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B62B2043E68800EEFAFA /* RescueModel.m */; };
+		CF70B6312043FB0700EEFAFA /* DCOrderInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6302043FB0700EEFAFA /* DCOrderInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,10 +293,10 @@
 		CF70B61E2043D74700EEFAFA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CF70B6212043D89400EEFAFA /* AppDelegate+CLBMKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CLBMKCategory.m"; sourceTree = "<group>"; };
 		CF70B6222043D89400EEFAFA /* AppDelegate+CLBMKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CLBMKCategory.h"; sourceTree = "<group>"; };
-		CF70B6242043E3C500EEFAFA /* DCOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCOrderTableViewCell.m; sourceTree = "<group>"; };
-		CF70B6252043E3C600EEFAFA /* DCOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCOrderTableViewCell.h; sourceTree = "<group>"; };
 		CF70B62B2043E68800EEFAFA /* RescueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RescueModel.m; sourceTree = "<group>"; };
 		CF70B62C2043E68900EEFAFA /* RescueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RescueModel.h; sourceTree = "<group>"; };
+		CF70B62F2043FB0700EEFAFA /* DCOrderInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCOrderInfoViewController.h; sourceTree = "<group>"; };
+		CF70B6302043FB0700EEFAFA /* DCOrderInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCOrderInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -896,7 +896,8 @@
 		CF36C0D72042B35F000CC50E /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				CF36C0E52042B65B000CC50E /* TotalOrderController */,
+				CF70B62E2043FADE00EEFAFA /* OrderInfoViewController */,
+				CF36C0E52042B65B000CC50E /* TotalOrderViewController */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -935,15 +936,13 @@
 			path = WorkbenchController;
 			sourceTree = "<group>";
 		};
-		CF36C0E52042B65B000CC50E /* TotalOrderController */ = {
+		CF36C0E52042B65B000CC50E /* TotalOrderViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CF36C0E02042B5B8000CC50E /* DCTotalOrderViewController.h */,
 				CF36C0E12042B5B8000CC50E /* DCTotalOrderViewController.m */,
-				CF70B6252043E3C600EEFAFA /* DCOrderTableViewCell.h */,
-				CF70B6242043E3C500EEFAFA /* DCOrderTableViewCell.m */,
 			);
-			path = TotalOrderController;
+			path = TotalOrderViewController;
 			sourceTree = "<group>";
 		};
 		CF36C0E72042BDAB000CC50E /* Login */ = {
@@ -1025,6 +1024,15 @@
 				CF70B62B2043E68800EEFAFA /* RescueModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CF70B62E2043FADE00EEFAFA /* OrderInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF70B62F2043FB0700EEFAFA /* DCOrderInfoViewController.h */,
+				CF70B6302043FB0700EEFAFA /* DCOrderInfoViewController.m */,
+			);
+			path = OrderInfoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1254,7 +1262,6 @@
 				CF36C0CC2042B249000CC50E /* BaseCustomNavigationController.m in Sources */,
 				CF36C0C82042B249000CC50E /* BaseCollectionViewCell.m in Sources */,
 				CF36C0AA2042B22E000CC50E /* UIImage+ImageEffects.m in Sources */,
-				CF70B6262043E3C600EEFAFA /* DCOrderTableViewCell.m in Sources */,
 				CF36C0A22042B22E000CC50E /* NSUserDefaults+CLCategory.m in Sources */,
 				CF36C0882042B22E000CC50E /* UIView+ConfigureActions.m in Sources */,
 				CF36C0DC2042B3F0000CC50E /* DCMineViewController.m in Sources */,
@@ -1283,6 +1290,7 @@
 				CF36BF942042AE22000CC50E /* AppDelegate.m in Sources */,
 				CF36C09B2042B22E000CC50E /* UIFont+Fonts.m in Sources */,
 				CF36C0942042B22E000CC50E /* UIView+GlowView.m in Sources */,
+				CF70B6312043FB0700EEFAFA /* DCOrderInfoViewController.m in Sources */,
 				CF36C0052042B17C000CC50E /* CLNetworkTool.m in Sources */,
 				CF70B60C2043B31500EEFAFA /* BMKPOITool.m in Sources */,
 				CF36C09E2042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.m in Sources */,

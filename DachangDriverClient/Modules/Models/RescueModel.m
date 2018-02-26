@@ -10,9 +10,64 @@
 
 
 @implementation RescueOrderModel
++ (nullable NSDictionary<NSString *, id> *)modelContainerPropertyGenericClass
+{
+    return @{
+             @"total":@"total",
+             @"rescues":[rescueOrderItemInfo class]
+             };
+}
+
+// 白名单
++ (NSArray *)modelPropertyWhitelist {
+    return @[@"total",
+             @"rescues"];
+}
 @end
 
 @implementation rescueOrderItemInfo
+
+// custom
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{
+             @"order_id":@"order_id",
+             @"order_no":@"order_no",
+             @"created_at":@"created_at",
+             @"car_number_plates":@"car_number_plates",
+             @"options_msg":@"options_msg",
+             @"detail":@"detail",
+             @"name":@"name",
+             @"phone":@"phone",
+             @"rescue_start":@"rescue_start",
+             @"order_msg":@"order_msg",
+             @"wait_time":@"wait_time",
+             @"options":@"options",
+             @"is_urgent":@"is_urgent",
+             @"rescue_mileage":@"rescue_mileage",
+             @"order_status":@"order_status"
+             };
+}
+
+// 白名单
++ (NSArray *)modelPropertyWhitelist {
+    return @[
+             @"order_id",
+             @"order_no",
+             @"created_at",
+             @"car_number_plates",
+             @"options_msg",
+             @"detail",
+             @"name",
+             @"phone",
+             @"rescue_start",
+             @"order_msg",
+             @"wait_time",
+             @"options",
+             @"is_urgent",
+             @"rescue_mileage",
+             @"order_status"
+             ];
+}
 @end
 
 @implementation CLRescueTaskListRequest
@@ -36,7 +91,7 @@
 }
 - (NSString *)requestUrl
 {
-    return @"/api/shoporder";
+    return @"/api/driverorder";
 }
 - (NSString *)baseUrl
 {
@@ -127,7 +182,7 @@
 }
 - (NSString *)requestUrl
 {
-    return @"/api/shoporder/edit";
+    return @"/api/driverorder/edit";
 }
 - (id)requestArgument
 {
