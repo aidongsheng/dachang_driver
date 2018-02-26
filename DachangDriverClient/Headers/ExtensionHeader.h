@@ -123,8 +123,8 @@
 #import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
 #import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
 
-//// 救援model
-//#import "RescueModel.h"
+// 救援model
+#import "RescueModel.h"
 //
 //  上传图片接口
 #import "MUploadImageRequest.h"

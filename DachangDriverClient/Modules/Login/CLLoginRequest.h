@@ -9,7 +9,7 @@
 #import <YTKNetwork/YTKNetwork.h>
 #import "CLUserInfoModel.h"
 
-@class CLLoginToServerRequest;
+@class DCDriverLoginRequest;
 
 // 获取验证码接口
 @interface GetVertifyRequest : YTKRequest{
@@ -21,13 +21,15 @@
 @end
 
 // 登录接口
-@interface CLLoginToServerRequest : GetVertifyRequest {
-    NSString * _vertifyCode;
+@interface DCDriverLoginRequest : GetVertifyRequest {
+    NSString * _account;
+    NSString * _password;
+    NSInteger _type;
+    NSString * _code;
 }
-
-- (id)initWith:(NSString *)phone vertifyCode:(NSString *)vertifyCode;
-
+- (id)initWithPhone:(NSString *)phone password:(NSString *)password;
 @end
+
 //  刷新 token
 @interface CLLoginRefreshTokenRequest : YTKRequest
 

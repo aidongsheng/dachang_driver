@@ -60,12 +60,12 @@
 @end
 
 
-@implementation CLLoginToServerRequest
-- (id)initWith:(NSString *)phone vertifyCode:(NSString *)vertifyCode
+@implementation DCDriverLoginRequest
+- (id)initWithPhone:(NSString *)phone password:(NSString *)password
 {
     if (self = [super init]) {
         _phone = phone;
-        _vertifyCode = vertifyCode;
+        _password = password;
     }
     return self;
 }
@@ -77,23 +77,31 @@
 
 - (NSString *)requestUrl
 {
-    return @"/api/user/auth/login";
+    return @"api/driver/login";
 }
 
 - (id)jsonValidator
 {
     return @{
-             @"access_token":[NSString class],
-             @"token_type":[NSString class],
-             @"expires_in":[NSNumber class]
+             @"status":[NSString class],
+             @"msg":@{
+                     @"token":[NSString class],
+                     @"phone":[NSString class],
+                     @"img_url":[NSString class]
+                     }
              };
 }
 - (id)requestArgument
 {
     return @{
              @"phone": _phone,
-             @"code":_vertifyCode
+             @"password":_password,
+             @"type":@(_type)
              };
+}
+- (YTKRequestMethod)requestMethod
+{
+    return YTKRequestMethodPOST;
 }
 
 @end

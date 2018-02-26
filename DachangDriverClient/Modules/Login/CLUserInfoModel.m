@@ -31,7 +31,7 @@
 }
 - (NSString *)requestUrl
 {
-    return @"/api/shop/login";
+    return @"api/driver/login";
 }
 - (id)requestArgument
 {
