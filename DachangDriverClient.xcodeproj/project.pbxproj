@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		B90F15EE289DC12A6D8D13A4 /* libPods-DachangDriverClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C4A3EBC07F50CCC65BD061 /* libPods-DachangDriverClient.a */; };
 		CF36BF942042AE22000CC50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BF932042AE22000CC50E /* AppDelegate.m */; };
-		CF36BF972042AE22000CC50E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BF962042AE22000CC50E /* ViewController.m */; };
-		CF36BF9A2042AE22000CC50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF36BF982042AE22000CC50E /* Main.storyboard */; };
 		CF36BF9C2042AE22000CC50E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF36BF9B2042AE22000CC50E /* Assets.xcassets */; };
 		CF36BF9F2042AE22000CC50E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF36BF9D2042AE22000CC50E /* LaunchScreen.storyboard */; };
 		CF36BFA22042AE22000CC50E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36BFA12042AE22000CC50E /* main.m */; };
@@ -86,6 +84,14 @@
 		CF36C0F12042BDAB000CC50E /* CLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0EA2042BDAB000CC50E /* CLLoginView.m */; };
 		CF36C0F22042BDAB000CC50E /* CLUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0EC2042BDAB000CC50E /* CLUserInfoModel.m */; };
 		CF36C0F32042BDAB000CC50E /* CLLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36C0EE2042BDAB000CC50E /* CLLoginRequest.m */; };
+		CF70B60C2043B31500EEFAFA /* BMKPOITool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6062043B31500EEFAFA /* BMKPOITool.m */; };
+		CF70B60D2043B31500EEFAFA /* BMKLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6092043B31500EEFAFA /* BMKLocationTool.m */; };
+		CF70B6142043B3E500EEFAFA /* CLOfflineMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6102043B3E500EEFAFA /* CLOfflineMapManager.m */; };
+		CF70B6152043B3E500EEFAFA /* CLMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6122043B3E500EEFAFA /* CLMapView.m */; };
+		CF70B6192043B44700EEFAFA /* MUploadImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6182043B44700EEFAFA /* MUploadImageRequest.m */; };
+		CF70B61D2043B53900EEFAFA /* BMKMapView+CLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B61B2043B53800EEFAFA /* BMKMapView+CLCategory.m */; };
+		CF70B61F2043D74700EEFAFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF70B61E2043D74700EEFAFA /* MapKit.framework */; };
+		CF70B6232043D89500EEFAFA /* AppDelegate+CLBMKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF70B6212043D89400EEFAFA /* AppDelegate+CLBMKCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,9 +118,6 @@
 		CF36BF8F2042AE22000CC50E /* DachangDriverClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DachangDriverClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF36BF922042AE22000CC50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF36BF932042AE22000CC50E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CF36BF952042AE22000CC50E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CF36BF962042AE22000CC50E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CF36BF992042AE22000CC50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF36BF9B2042AE22000CC50E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF36BF9E2042AE22000CC50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF36BFA02042AE22000CC50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -273,6 +276,21 @@
 		CF36C0EE2042BDAB000CC50E /* CLLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLoginRequest.m; sourceTree = "<group>"; };
 		CF36C0EF2042BDAB000CC50E /* CLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLoginView.h; sourceTree = "<group>"; };
 		CF36C0F42042BE1E000CC50E /* driver_project_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = driver_project_header.h; sourceTree = "<group>"; };
+		CF70B6062043B31500EEFAFA /* BMKPOITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKPOITool.m; sourceTree = "<group>"; };
+		CF70B6072043B31500EEFAFA /* BMKLocationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKLocationTool.h; sourceTree = "<group>"; };
+		CF70B6082043B31500EEFAFA /* BMKPOITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPOITool.h; sourceTree = "<group>"; };
+		CF70B6092043B31500EEFAFA /* BMKLocationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKLocationTool.m; sourceTree = "<group>"; };
+		CF70B6102043B3E500EEFAFA /* CLOfflineMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOfflineMapManager.m; sourceTree = "<group>"; };
+		CF70B6112043B3E500EEFAFA /* CLMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMapView.h; sourceTree = "<group>"; };
+		CF70B6122043B3E500EEFAFA /* CLMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMapView.m; sourceTree = "<group>"; };
+		CF70B6132043B3E500EEFAFA /* CLOfflineMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOfflineMapManager.h; sourceTree = "<group>"; };
+		CF70B6172043B44700EEFAFA /* MUploadImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUploadImageRequest.h; sourceTree = "<group>"; };
+		CF70B6182043B44700EEFAFA /* MUploadImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUploadImageRequest.m; sourceTree = "<group>"; };
+		CF70B61B2043B53800EEFAFA /* BMKMapView+CLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BMKMapView+CLCategory.m"; sourceTree = "<group>"; };
+		CF70B61C2043B53800EEFAFA /* BMKMapView+CLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BMKMapView+CLCategory.h"; sourceTree = "<group>"; };
+		CF70B61E2043D74700EEFAFA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CF70B6212043D89400EEFAFA /* AppDelegate+CLBMKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CLBMKCategory.m"; sourceTree = "<group>"; };
+		CF70B6222043D89400EEFAFA /* AppDelegate+CLBMKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CLBMKCategory.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +298,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF70B61F2043D74700EEFAFA /* MapKit.framework in Frameworks */,
 				B90F15EE289DC12A6D8D13A4 /* libPods-DachangDriverClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +332,7 @@
 		97BFA57DB4B827E1EA0A4223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF70B61E2043D74700EEFAFA /* MapKit.framework */,
 				63C4A3EBC07F50CCC65BD061 /* libPods-DachangDriverClient.a */,
 			);
 			name = Frameworks;
@@ -350,9 +370,6 @@
 				CF36BFC42042B17B000CC50E /* GeneralTools */,
 				CF36BF922042AE22000CC50E /* AppDelegate.h */,
 				CF36BF932042AE22000CC50E /* AppDelegate.m */,
-				CF36BF952042AE22000CC50E /* ViewController.h */,
-				CF36BF962042AE22000CC50E /* ViewController.m */,
-				CF36BF982042AE22000CC50E /* Main.storyboard */,
 				CF36BF9B2042AE22000CC50E /* Assets.xcassets */,
 				CF36BF9D2042AE22000CC50E /* LaunchScreen.storyboard */,
 				CF36BFA02042AE22000CC50E /* Info.plist */,
@@ -382,6 +399,9 @@
 		CF36BFC42042B17B000CC50E /* GeneralTools */ = {
 			isa = PBXGroup;
 			children = (
+				CF70B6162043B44700EEFAFA /* 上传图片 */,
+				CF70B60F2043B3E500EEFAFA /* MapView-Tool */,
+				CF70B5FF2043B31500EEFAFA /* Location-Tool */,
 				CF36BFC52042B17B000CC50E /* InputAccessoryView */,
 				CF36BFC82042B17B000CC50E /* DBTool */,
 				CF36BFD22042B17B000CC50E /* CarouselView */,
@@ -473,6 +493,7 @@
 		CF36C0062042B22E000CC50E /* Extension+Category */ = {
 			isa = PBXGroup;
 			children = (
+				CF70B61A2043B53800EEFAFA /* BMKMapView+Category */,
 				CF36C0072042B22E000CC50E /* YTKRequest+Category */,
 				CF36C00A2042B22E000CC50E /* QMUI+Category */,
 				CF36C0152042B22E000CC50E /* UITableView+Category */,
@@ -687,6 +708,7 @@
 		CF36C0602042B22E000CC50E /* AppDelegate+Category */ = {
 			isa = PBXGroup;
 			children = (
+				CF70B6202043D89400EEFAFA /* Appdelegate+BMK */,
 				CF36C0612042B22E000CC50E /* AppDelegate+Alipay */,
 				CF36C0622042B22E000CC50E /* JpushDelegate */,
 			);
@@ -930,6 +952,63 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		CF70B5FF2043B31500EEFAFA /* Location-Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CF70B6052043B31500EEFAFA /* BaiduTool */,
+			);
+			path = "Location-Tool";
+			sourceTree = "<group>";
+		};
+		CF70B6052043B31500EEFAFA /* BaiduTool */ = {
+			isa = PBXGroup;
+			children = (
+				CF70B6072043B31500EEFAFA /* BMKLocationTool.h */,
+				CF70B6092043B31500EEFAFA /* BMKLocationTool.m */,
+				CF70B6082043B31500EEFAFA /* BMKPOITool.h */,
+				CF70B6062043B31500EEFAFA /* BMKPOITool.m */,
+			);
+			path = BaiduTool;
+			sourceTree = "<group>";
+		};
+		CF70B60F2043B3E500EEFAFA /* MapView-Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CF70B6102043B3E500EEFAFA /* CLOfflineMapManager.m */,
+				CF70B6112043B3E500EEFAFA /* CLMapView.h */,
+				CF70B6122043B3E500EEFAFA /* CLMapView.m */,
+				CF70B6132043B3E500EEFAFA /* CLOfflineMapManager.h */,
+			);
+			path = "MapView-Tool";
+			sourceTree = "<group>";
+		};
+		CF70B6162043B44700EEFAFA /* 上传图片 */ = {
+			isa = PBXGroup;
+			children = (
+				CF70B6172043B44700EEFAFA /* MUploadImageRequest.h */,
+				CF70B6182043B44700EEFAFA /* MUploadImageRequest.m */,
+			);
+			path = "上传图片";
+			sourceTree = "<group>";
+		};
+		CF70B61A2043B53800EEFAFA /* BMKMapView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF70B61B2043B53800EEFAFA /* BMKMapView+CLCategory.m */,
+				CF70B61C2043B53800EEFAFA /* BMKMapView+CLCategory.h */,
+			);
+			path = "BMKMapView+Category";
+			sourceTree = "<group>";
+		};
+		CF70B6202043D89400EEFAFA /* Appdelegate+BMK */ = {
+			isa = PBXGroup;
+			children = (
+				CF70B6212043D89400EEFAFA /* AppDelegate+CLBMKCategory.m */,
+				CF70B6222043D89400EEFAFA /* AppDelegate+CLBMKCategory.h */,
+			);
+			path = "Appdelegate+BMK";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1002,6 +1081,11 @@
 					CF36BF8E2042AE22000CC50E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CF36BFA62042AE22000CC50E = {
 						CreatedOnToolsVersion = 9.2;
@@ -1042,7 +1126,6 @@
 			files = (
 				CF36BF9F2042AE22000CC50E /* LaunchScreen.storyboard in Resources */,
 				CF36BF9C2042AE22000CC50E /* Assets.xcassets in Resources */,
-				CF36BF9A2042AE22000CC50E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1127,10 +1210,11 @@
 				CF36C0972042B22E000CC50E /* UIView+DebugFrame.m in Sources */,
 				CF36C0042042B17C000CC50E /* AudioTool.m in Sources */,
 				CF36BFFC2042B17C000CC50E /* CarouselCollectionViewCell.m in Sources */,
+				CF70B6142043B3E500EEFAFA /* CLOfflineMapManager.m in Sources */,
 				CF36C0F12042BDAB000CC50E /* CLLoginView.m in Sources */,
 				CF36C08B2042B22E000CC50E /* UIView+ConvertRect.m in Sources */,
 				CF36C0872042B22E000CC50E /* UITableViewHeaderFooterView+Category.m in Sources */,
-				CF36BF972042AE22000CC50E /* ViewController.m in Sources */,
+				CF70B60D2043B31500EEFAFA /* BMKLocationTool.m in Sources */,
 				CF36C0892042B22E000CC50E /* UIView+POPAnimations.m in Sources */,
 				CF36C0A32042B22E000CC50E /* UITextField+CLCategory.m in Sources */,
 				CF36C09F2042B22E000CC50E /* BaseCustomButton+Events.m in Sources */,
@@ -1159,12 +1243,15 @@
 				CF36C0902042B22E000CC50E /* UIView+ToastView.m in Sources */,
 				CF36C0992042B22E000CC50E /* UIView+SetupSubViews.m in Sources */,
 				CF36C0A72042B22E000CC50E /* UILabel+Category.m in Sources */,
+				CF70B6152043B3E500EEFAFA /* CLMapView.m in Sources */,
 				CF36C0A12042B22E000CC50E /* BaseCustomButton+Style.m in Sources */,
+				CF70B6232043D89500EEFAFA /* AppDelegate+CLBMKCategory.m in Sources */,
 				CF36C08C2042B22E000CC50E /* UIView+SetRect.m in Sources */,
 				CF36C08D2042B22E000CC50E /* UIView+ScreensShot.m in Sources */,
 				CF36BFF72042B17C000CC50E /* DBTool.m in Sources */,
 				CF36C0952042B22E000CC50E /* UIView+AnimationPracticalMethod.m in Sources */,
 				CF36C0AD2042B22E000CC50E /* UITextView+Placeholder.m in Sources */,
+				CF70B6192043B44700EEFAFA /* MUploadImageRequest.m in Sources */,
 				CF36C0812042B22E000CC50E /* QMUIButton+TitleLabel.m in Sources */,
 				CF36C0F32042BDAB000CC50E /* CLLoginRequest.m in Sources */,
 				CF36C0E22042B5B8000CC50E /* DCTotalOrderViewController.m in Sources */,
@@ -1172,11 +1259,13 @@
 				CF36BFFE2042B17C000CC50E /* CLWebViewViewController.m in Sources */,
 				CF36C0DF2042B593000CC50E /* DCWorkbenchViewController.m in Sources */,
 				CF36BFA22042AE22000CC50E /* main.m in Sources */,
+				CF70B61D2043B53900EEFAFA /* BMKMapView+CLCategory.m in Sources */,
 				CF36C0802042B22E000CC50E /* QMUITextField+Warning.m in Sources */,
 				CF36BF942042AE22000CC50E /* AppDelegate.m in Sources */,
 				CF36C09B2042B22E000CC50E /* UIFont+Fonts.m in Sources */,
 				CF36C0942042B22E000CC50E /* UIView+GlowView.m in Sources */,
 				CF36C0052042B17C000CC50E /* CLNetworkTool.m in Sources */,
+				CF70B60C2043B31500EEFAFA /* BMKPOITool.m in Sources */,
 				CF36C09E2042B22E000CC50E /* BaseCustomButton+LayoutTitleLabelImageView.m in Sources */,
 				CF36C0842042B22E000CC50E /* UITableView+SearchBarCategory.m in Sources */,
 				CF36C0AC2042B22E000CC50E /* NSDictionary+CLCategory.m in Sources */,
@@ -1232,14 +1321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CF36BF982042AE22000CC50E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF36BF992042AE22000CC50E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF36BF9D2042AE22000CC50E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1366,7 +1447,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DachangDriverClient/Headers/driver_project_header.h";
 				INFOPLIST_FILE = DachangDriverClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dachang.driver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1383,7 +1464,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DachangDriverClient/Headers/driver_project_header.h";
 				INFOPLIST_FILE = DachangDriverClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dongsheng.DachangDriverClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dachang.driver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

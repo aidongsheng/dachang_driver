@@ -16,10 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    QMUIMarqueeLabel * label = [[QMUIMarqueeLabel alloc]init];
-    [label qmui_enumrateInstanceMethodsUsingBlock:^(SEL selector) {
-        debug_NSLog(@"%@",NSStringFromSelector(selector));
-    }];
+    
+    
 }
 
 

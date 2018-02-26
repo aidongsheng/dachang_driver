@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+CLBMKCategory.h"
 #import "BaseCustomTabBarController.h"
 #import <Bugly/Bugly.h>
 #import <IQKeyboardManager.h>
@@ -14,21 +15,20 @@
 #import "DCMineViewController.h"
 #import "DCTotalOrderViewController.h"
 
-static NSString * const BuglyKey = @"fa684c3da3";
+static NSString * const BuglyAppId = @"38a416012e";
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //  配置腾讯Bugly appkey
-    [Bugly startWithAppId:BuglyKey];
+    [Bugly startWithAppId:BuglyAppId];
     //  配置高德 appkey
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     BaseCustomTabBarController * tabBarController = [[BaseCustomTabBarController alloc]init];
-    
     DCWorkbenchViewController * workbenchVC = [[DCWorkbenchViewController alloc]init];
     DCTotalOrderViewController * totalOrderVC = [[DCTotalOrderViewController alloc]init];
     DCMineViewController * mineVC = [[DCMineViewController alloc]init];
-    tabBarController.rootControllers =[[NSMutableArray alloc]initWithObjects:workbenchVC,totalOrderVC,mineVC, nil];
+    tabBarController.rootControllers =[[NSMutableArray alloc]initWithObjects:totalOrderVC,workbenchVC,mineVC, nil];
     tabBarController.selectedIndex = 1;
     [tabBarController setHidesBottomBarWhenPushed:YES];
     _window.rootViewController = tabBarController;
@@ -37,6 +37,8 @@ static NSString * const BuglyKey = @"fa684c3da3";
     [[IQKeyboardManager sharedManager]setEnable:YES];
     [IQKeyboardManager sharedManager].shouldShowToolbarPlaceholder = YES;
     [IQKeyboardManager sharedManager].shouldToolbarUsesTextFieldTintColor = YES;
+    [self registerBMKKey];
+    [self checkLocateAuth];
     return YES;
 }
 

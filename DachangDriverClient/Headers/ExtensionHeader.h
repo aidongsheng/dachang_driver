@@ -71,10 +71,10 @@
 //  collectionview
 #import "UICollectionViewCell+RegisterCell.h"
 
-//// 地图相关
-//#import "BMKLocationTool.h"
-//#import "BMKMapView+CLCategory.h"
-//#import "BMKPOITool.h"
+// 地图相关
+#import "BMKLocationTool.h"
+#import "BMKMapView+CLCategory.h"
+#import "BMKPOITool.h"
 // 网络相关
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -116,26 +116,26 @@
 
 //  猿题库网络请求分类
 #import "YTKRequest+Category.h"
-////  百度地图相关
-//#import <BMKLocationKit/BMKLocationComponent.h>
-//#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
-//#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
-//#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
-//#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+//  百度地图相关
+#import <BMKLocationKit/BMKLocationComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
 
 //// 救援model
 //#import "RescueModel.h"
 //
-////  上传图片接口
-//#import "MUploadImageRequest.h"
+//  上传图片接口
+#import "MUploadImageRequest.h"
 //
 ////  用户资料model
 //#import "CLUserInfoModel.h"
 ////  司机列表模型
 //#import "MDriverModel.h"
 //
-//// 继承自 BMKMapView 的地图子类
-//#import "CLMapView.h"
+// 继承自 BMKMapView 的地图子类
+#import "CLMapView.h"
 //  登录类
 #import "CLLoginViewController.h"
 
