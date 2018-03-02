@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 @class rescueOrderItemInfo;
+@class CLDriverWorkOrderProcessRequest;
+
 @interface RescueOrderModel : NSObject<YYModel>
 @property (nonatomic,assign) NSInteger total;
 @property (nonatomic,strong) NSArray * rescues;
@@ -118,7 +120,7 @@
 @end
 
 /**
- 工单处理接口
+ 工单处理接口(商家端)
  */
 @interface CLWorkOrderProcessRequest : YTKRequest{
     NSInteger _order_no;    //工单号
@@ -129,4 +131,42 @@
     double   _order_gps_y;   //接单地点GPS坐标Y 经度 状态 1必须
 }
 - (id)initWithOrderno:(NSInteger)order_no status:(NSInteger)status reason:(NSString *)reason order_start:(NSString *)order_start latitude:(double)order_gps_x longitude:(double)order_gps_y;
+@end
+
+
+/**
+ 司机【拒单】、【接单】接口（司机端）
+ */
+@interface CLDriverWorkOrderProcessRequest : YTKRequest{
+    NSString * _order_no;
+    NSString * _reason;
+    NSString * _order_start;
+    NSInteger _status;
+    double _order_gps_x;
+    double _order_gps_y;
+    
+}
+- (id)initWithOrderNo:(NSString *)orderNo
+               status:(NSInteger)status
+           orderStart:(NSString *)orderStart
+            orderGPSx:(double)orderGPSx
+            orderGPSy:(double)orderGPSy
+               reason:(NSString *)reason;
+@end
+
+
+/**
+ 获取接单状态
+ */
+@interface DCFetchTakingOrderRequest : YTKRequest
+@end
+
+/**
+ 改变接单状态
+ */
+@interface DCChangeTakingOrderStatusRequest : YTKRequest{
+    NSInteger _status;
+}
+- (id)initWithStatus:(NSInteger)status;
+
 @end

@@ -12,6 +12,7 @@
 @property (nonatomic,strong) BMKMapView * mapView;
 @property (nonatomic,strong) QMUIButton * startTakingOrderBtn;
 @property (nonatomic,strong) BMKLocationService * service;
+@property (nonatomic,assign) NSInteger takingOrderStatus;
 @end
 
 @implementation DCWorkbenchViewController
@@ -54,8 +55,43 @@
         make.centerX.equalTo(self.view.mas_centerX);
         make.bottom.equalTo(self.view.mas_bottom).offset(-20);
     }];
+    [_startTakingOrderBtn blockEvent:^(QMUIButton *button) {
+        DCChangeTakingOrderStatusRequest * req = [[DCChangeTakingOrderStatusRequest alloc]initWithStatus:!_takingOrderStatus];
+        [req startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+            NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:request.responseString];
+            [self showInfo:info[@"msg"]];
+        } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+            
+        }];
+    }];
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self setupDataSource];
+    
+}
+- (void)setupDataSource
+{
+    [super setupDataSource];
+    DCFetchTakingOrderRequest * req = [[DCFetchTakingOrderRequest alloc]init];
+    [req startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:request.responseString];
+        NSInteger status = [info[@"status"] integerValue];
+        if (status == 1) {
+            [_startTakingOrderBtn setTitle:@"开始接单" forState:UIControlStateNormal];
+            [_startTakingOrderBtn setTitleColor:WhiteColor forState:UIControlStateNormal];
+            _takingOrderStatus = 1;
+        }else{
+            [_startTakingOrderBtn setTitle:@"停止接单" forState:UIControlStateNormal];
+            [_startTakingOrderBtn setTitleColor:WhiteColor forState:UIControlStateNormal];
+            _takingOrderStatus = 0;
+        }
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        
+    }];
+    
+}
 #pragma mark - 百度地图服务代理
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
     [_mapView updateLocationData:userLocation];

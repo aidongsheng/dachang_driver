@@ -43,7 +43,12 @@
 - (void)initCellWithImgUrl:(NSString *)imgUrl;
 @end
 
+/**
+ 备注信息
+ */
+@interface DCOrderInfoRemarkCell : DCOrderInfoTableViewCell
 
+@end
 
 @interface DCOrderInfoViewController : BaseCustomViewController
 @property (nonatomic,copy) NSString * order_no, * order_id;

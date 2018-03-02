@@ -270,6 +270,9 @@
 - (void)setupSubViews
 {
     [super setupSubViews];
+    
+    
+    
     _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -279,9 +282,11 @@
     _tableView.mj_header = header;
     [self.view addSubview:_tableView];
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.bottom.mas_equalTo(0);
+        make.top.bottom.left.right.mas_equalTo(0);
     }];
     [DCOrderTableViewCell registerToTableView:_tableView];
+    
+    
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -306,7 +311,7 @@
         NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:request.responseString];
         _model = [[RescueOrderModel alloc]init];
         _model = [RescueOrderModel modelWithDictionary:info];
-        [self showText:[NSString stringWithFormat:@"%li 条救援订单",_model.rescues.count]];
+//        [self showText:[NSString stringWithFormat:@"%li 条救援订单",_model.rescues.count]];
         [_tableView.mj_header endRefreshing];
         [_tableView reloadData];
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {

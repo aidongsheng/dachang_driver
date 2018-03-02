@@ -163,15 +163,13 @@
 @property (nonatomic,strong) CLRescueOrderDetailModel * detailModel;
 @end
 @implementation DCOrderInfoPicsCell
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupSubViews];
     }
     return self;
 }
-- (void)setupSubViews
-{
+- (void)setupSubViews {
     [super setupSubViews];
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc]init];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -188,41 +186,35 @@
     _collectionView.backgroundColor = WhiteColor;
     [OrderInfoPictureCollectionCell registerClassforCellToCollectionView:_collectionView];
 }
-- (void)initWithModel:(CLRescueOrderDetailModel *)model
-{
-    //    NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:[model modelDescription]];
+- (void)initWithModel:(CLRescueOrderDetailModel *)model {
     debug_NSLog(@"model=%@",[model modelDescription]);
     _detailModel = [[CLRescueOrderDetailModel alloc]init];
     _detailModel = model;
+    self.titleLabel.text = [NSString stringWithFormat:@"现场照片"];
     [_collectionView reloadData];
     
 }
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return _detailModel.rescue_place_img.count;;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     OrderInfoPictureCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:stringFromClass(OrderInfoPictureCollectionCell) forIndexPath:indexPath];
     [cell initCellWithImgUrl:@"http://img1001.pocoimg.cn/image/poco/works/03/2018/0206/19/15179174731402207_7989723.jpg" ];
     return cell;
 }
 
 // 和UITableView类似，UICollectionView也可设置段头段尾
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     return nil;
 }
 
 #pragma mark ---- UICollectionViewDelegateFlowLayout
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(Width/2.0, _collectionView.height);
 }
 
@@ -309,8 +301,39 @@
 }
 @end
 
+@interface DCOrderInfoRemarkCell()
+@property (nonatomic,strong) UITextView * textView;
+@end
+@implementation DCOrderInfoRemarkCell
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [self setupSubViews];
+    }
+    return self;
+}
+- (void)setupSubViews
+{
+    [super setupSubViews];
+    _textView = [[UITextView alloc]init];
+    [self.contentView addSubview:_textView];
+    [_textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0).offset(5);
+        make.bottom.right.mas_equalTo(0).offset(-5);
+        make.top.equalTo(self.titleLabel.mas_bottom).offset(5);
+    }];
+}
+- (void)initCellWithModel:(CLRescueOrderDetailModel *)model
+{
+    self.titleLabel.text = @"备注";
+    NSString * remark = [NSString stringWithFormat:@"%@",model.remark];
+    _textView.text = remark.length < 1 ? @"没有留言" : remark;
+}
+@end
+
 @interface DCOrderInfoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
+@property (nonatomic,strong) QMUIButton * refuseBtn, * acceptBtn;
 @property (nonatomic,strong) CLRescueOrderDetailModel * model;
 @end
 
@@ -321,9 +344,29 @@
     [self setupSubViews];
 }
 
-- (void)setupSubViews
-{
+- (void)setupSubViews {
     [super setupSubViews];
+    _refuseBtn = [[QMUIButton alloc]qmui_initWithImage:nil title:@"拒单"];
+    _refuseBtn.backgroundColor = WhiteColor;
+    [_refuseBtn setTitleColor:BlackColor forState:UIControlStateNormal];
+    _refuseBtn.titleLabel.font = Medium(18);
+    [self.view addSubview:_refuseBtn];
+    _acceptBtn = [[QMUIButton alloc]qmui_initWithImage:nil title:@"接单"];
+    _acceptBtn.backgroundColor = navbar_tint_color;
+    [_acceptBtn setTitleColor:WhiteColor forState:UIControlStateNormal];
+    _acceptBtn.titleLabel.font = Medium(18);
+    [self.view addSubview:_acceptBtn];
+    [_refuseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.mas_equalTo(0);
+        make.right.equalTo(self.view.mas_centerX);
+        make.height.equalTo(@50);
+    }];
+    [_acceptBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.bottom.mas_equalTo(0);
+        make.left.equalTo(self.view.mas_centerX);
+        make.height.equalTo(@50);
+    }];
+    
     _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -346,28 +389,93 @@
     _tableView.mj_header = header;
     [self.view addSubview:_tableView];
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.bottom.mas_equalTo(0);
+        make.top.left.right.mas_equalTo(0);
+        make.bottom.equalTo(_refuseBtn.mas_top);
     }];
     [DCOrderInfoPlacesCell registerToTableView:_tableView];
     [DCOrderInfoCustomerInfoCell registerToTableView:_tableView];
+    [DCOrderInfoPicsCell registerToTableView:_tableView];
+    [DCOrderInfoRemarkCell registerToTableView:_tableView];
     [_tableView.mj_header beginRefreshing];
+    [_refuseBtn blockEvent:^(QMUIButton *button) {
+        [self showCancelView];
+    }];
+    [_acceptBtn blockEvent:^(QMUIButton *button) {
+        [self refuseOrder:1];
+    }];
 }
-- (void)viewWillAppear:(BOOL)animated
+
+- (void)showCancelView
 {
+    QMUIAlertController * alertController = [QMUIAlertController alertControllerWithTitle:@"拒单" message:@"你确认要拒绝该订单吗？" preferredStyle:QMUIAlertControllerStyleAlert];
+    QMUIAlertAction * cancelAction = [QMUIAlertAction actionWithTitle:@"取消" style:QMUIAlertActionStyleCancel handler:^(QMUIAlertAction *action) {
+        [alertController dismissViewControllerAnimated:YES completion:nil];
+    }];
+    cancelAction.buttonAttributes = @{NSFontAttributeName:Medium(18)};
+    [alertController addAction:cancelAction];
+    
+    QMUIAlertAction * confirmAction = [QMUIAlertAction actionWithTitle:@"确定" style:QMUIAlertActionStyleDefault handler:^(QMUIAlertAction *action) {
+        [self refuseOrder:2];
+        [alertController dismissViewControllerAnimated:YES completion:nil];
+    }];
+    confirmAction.buttonAttributes = @{NSForegroundColorAttributeName:RGB(230, 46, 46, 1),NSFontAttributeName:Medium(18)};
+    [alertController addAction:confirmAction];
+    [alertController showWithAnimated:YES];
+}
+
+- (void)refuseOrder:(NSInteger)status
+{
+    
+    
+    [[BMKLocationTool shareInstance] adsRequestLocationWithReGeocode:YES withNetworkState:YES completionBlock:^(BMKLocation * _Nullable location, BMKLocationNetworkState state, NSError * _Nullable error) {
+        NSString * orderStart = [NSString stringWithFormat:@"%@",[NSString stringWithFormat:@"%@",location.rgcData.province]];
+        orderStart = [orderStart stringByAppendingString:[NSString stringWithFormat:@"%@",location.rgcData.city]];
+        orderStart = [orderStart stringByAppendingString:[NSString stringWithFormat:@"%@",location.rgcData.district]];
+        orderStart = [orderStart stringByAppendingString:[NSString stringWithFormat:@"%@",location.rgcData.street]];
+        orderStart = [orderStart stringByAppendingString:[NSString stringWithFormat:@"%@",location.rgcData.streetNumber]];
+        orderStart = [orderStart stringByAppendingString:[NSString stringWithFormat:@"%@",location.rgcData.locationDescribe]];
+        
+        CLLocationCoordinate2D coord = location.location.coordinate;
+        
+        CLDriverWorkOrderProcessRequest * req = [[CLDriverWorkOrderProcessRequest alloc]initWithOrderNo:_model.order_no
+                                                                                                 status:status
+                                                                                             orderStart:orderStart
+                                                                                              orderGPSx:coord.latitude
+                                                                                              orderGPSy:coord.longitude
+                                                                                                 reason:@"没有为什么"];
+        [req startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+            NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:request.responseString];
+            if (state == 2) {
+                debug_NSLog(@"拒单成功:%@",info);
+            }else{
+                debug_NSLog(@"接单成功:%@",info);
+            }
+            [self showText:[NSString stringWithFormat:@"%@",info[@"msg"]]];
+            
+        } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+            NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:request.responseString];
+            if (state == 2) {
+                debug_NSLog(@"拒单失败:%@",info);
+            }else{
+                debug_NSLog(@"接单失败:%@",info);
+            }
+            [self showText:[NSString stringWithFormat:@"%@",info[@"msg"]]];
+        }];
+    }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self setupDataSource];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 3;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 4;
 }
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         DCOrderInfoPlacesCell * cell = [tableView dequeueReusableCellWithIdentifier:stringFromClass(DCOrderInfoPlacesCell)];
         if (!cell) {
@@ -392,12 +500,19 @@
         }
         [cell initWithModel:_model];
         return cell;
+    }else if (indexPath.section == 3){
+        DCOrderInfoRemarkCell * cell = [tableView dequeueReusableCellWithIdentifier:stringFromClass(DCOrderInfoRemarkCell)];
+        if (!cell) {
+            cell = [[DCOrderInfoRemarkCell alloc]initWithStyle:UITableViewCellStyleDefault
+                                               reuseIdentifier:stringFromClass(DCOrderInfoRemarkCell)];
+        }
+        [cell initCellWithModel:_model];
+        return cell;
     }else{
         return nil;
     }
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         return 150;
     }else if (indexPath.section == 1){
@@ -405,28 +520,25 @@
     }else if (indexPath.section == 2){
         return 180;
     }
-    else{
+    else if (indexPath.section == 3){
+        return 180;
+    }else{
         return 0;
     }
 }
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     return nil;
 }
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-{
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     return nil;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 0;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

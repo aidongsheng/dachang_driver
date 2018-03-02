@@ -286,7 +286,7 @@
 }
 - (NSString *)requestUrl
 {
-    return @"/api/driverorder/handleOrder";
+    return @"/api/shoporder/handleOrder";
 }
 - (id)requestArgument
 {
@@ -305,4 +305,92 @@
              };
 }
 
+@end
+
+@implementation CLDriverWorkOrderProcessRequest
+
+- (id)initWithOrderNo:(NSString *)orderNo
+               status:(NSInteger)status
+           orderStart:(NSString *)orderStart
+            orderGPSx:(double)orderGPSx
+            orderGPSy:(double)orderGPSy
+               reason:(NSString *)reason
+{
+    if (self == [super init]) {
+        _order_no = orderNo;
+        _status = status;
+        _order_start = orderStart;
+        _order_gps_x = orderGPSx;
+        _order_gps_y = orderGPSy;
+        _reason = reason;
+    }
+    return self;
+}
+- (NSString *)requestUrl
+{
+    return @"/api/driverorder/handleOrder";
+}
+- (YTKRequestMethod)requestMethod
+{
+    return YTKRequestMethodPOST;
+}
+- (id)requestArgument
+{
+    return @{
+             @"order_no":_order_no,
+             @"reason":_reason,
+             @"order_gps_x":@(_order_gps_x),
+             @"order_gps_y":@(_order_gps_y),
+             @"status":@(_status),
+             @"order_start":_order_start
+             };
+}
+-(id)jsonValidator
+{
+    return @{
+             @"status":[NSNumber class],
+             @"msg":[NSString class]
+             };
+}
+@end
+
+
+@implementation DCFetchTakingOrderRequest
+- (NSString *)requestUrl
+{
+    return @"/api/driverorder/dispatch_status";
+}
+- (id)jsonValidator
+{
+    return @{
+             @"status":[NSNumber class],
+             @"msg":[NSNumber class]
+             };
+}
+- (YTKRequestMethod)requestMethod
+{
+    return YTKRequestMethodPOST;
+}
+@end
+
+@implementation DCChangeTakingOrderStatusRequest
+- (id)initWithStatus:(NSInteger)status
+{
+    if (self == [super init]) {
+        _status = status;
+    }
+    return self;
+}
+- (NSString *)requestUrl
+{
+    return @"/api/driverorder/isDispatch";
+}
+- (YTKRequestMethod)requestMethod
+{
+    return YTKRequestMethodPOST;
+}
+- (id)requestArgument
+{
+    return @{@"status":@(_status)};
+}
 @end
