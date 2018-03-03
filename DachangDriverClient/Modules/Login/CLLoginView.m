@@ -75,7 +75,7 @@
     [_getVertifyCodeBtn setTitleColor:RGB(0, 102, 235, 1) forState:UIControlStateNormal];
     [_getVertifyCodeBtn setBackgroundColor:[UIColor clearColor]];
     [self addSubview:_getVertifyCodeBtn];
-    _loginBtn = [[QMUIButton alloc]qmui_initWithImage:nil title:@""];
+    _loginBtn = [[QMUIButton alloc]qmui_initWithImage:nil title:@"登录"];
     [_loginBtn setTitleColor:WhiteColor forState:UIControlStateNormal];
     [_loginBtn setBackgroundColor:naviBar_tint_color];
     [self addSubview:_loginBtn];
