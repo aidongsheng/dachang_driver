@@ -311,7 +311,6 @@
         NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:request.responseString];
         _model = [[RescueOrderModel alloc]init];
         _model = [RescueOrderModel modelWithDictionary:info];
-//        [self showText:[NSString stringWithFormat:@"%li 条救援订单",_model.rescues.count]];
         [_tableView.mj_header endRefreshing];
         [_tableView reloadData];
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {

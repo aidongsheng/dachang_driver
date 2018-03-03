@@ -60,6 +60,9 @@
         [req startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
             NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:request.responseString];
             [self showInfo:info[@"msg"]];
+            if (info[@"msg"] && [info[@"msg"] isEqualToString:@"登录超时，请重新登录"]) {
+                
+            }
         } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
             
         }];

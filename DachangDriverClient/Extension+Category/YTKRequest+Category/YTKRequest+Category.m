@@ -28,6 +28,12 @@
             debug_NSLog(@"token = %@",[NSUserDefaults token]);
         }
     }
+    
+    NSDictionary * info = [NSDictionary parseJSONStringToNSDictionary:self.responseString];
+    if (info[@"msg"] && [info[@"msg"] isEqualToString:@"登录超时，请重新登录"]) {
+        [self presentLoginViewController];
+    }
+    
 }
 - (void)requestFailedPreprocessor {
     if (self.responseStatusCode == 401) {

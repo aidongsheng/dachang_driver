@@ -23,6 +23,9 @@
     return @[@"total",
              @"rescues"];
 }
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    
+}
 @end
 
 @implementation rescueOrderItemInfo
@@ -67,6 +70,9 @@
              @"rescue_mileage",
              @"order_status"
              ];
+}
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    
 }
 @end
 

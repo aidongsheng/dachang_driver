@@ -11,7 +11,7 @@
 
 #ifdef DEBUG
     // 开发服务器地址
-# define CLBaseUrl @"http://192.168.0.247"
+# define CLBaseUrl @"http://106.14.205.177"
 #else
     // 发布服务器地址
 # define CLBaseUrl @"http://51api.dcqcjlb.com:9801"
